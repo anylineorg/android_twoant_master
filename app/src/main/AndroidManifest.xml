@@ -192,7 +192,7 @@
         <!-- 极光 appkey -->
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="afcdd4027bf7145195c03c04" />
+            android:value="3cfcb466839e69ac6ebd5d78" />
 
         <!-- 用户自定义的广播接收器 -->
         <receiver
