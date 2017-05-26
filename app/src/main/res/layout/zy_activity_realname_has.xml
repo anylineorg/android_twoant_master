@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_realname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ff6733"
+        android:layout_height="@dimen/px_420">
+
+        <RelativeLayout
+            android:layout_width="@dimen/px_200"
+            android:layout_height="@dimen/px_200"
+            android:layout_marginTop="@dimen/px_72"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_rlname_bg"
+            android:id="@+id/relativeLayout">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_img_realname_has"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/px_170"
+                android:src="@drawable/icon_rlname"
+                android:layout_height="@dimen/px_170"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_30"
+            android:textColor="@color/whiteBgColor"
+            android:text="您已通过实名认证"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:background="@color/btnTextColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="真实姓名:"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="姓名"
+            android:layout_marginRight="@dimen/px_30"
+            android:textColorHint="@color/light_white"
+            android:layout_marginLeft="@dimen/px_80"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:textColor="@color/subordinationContentTextColor"
+            android:id="@+id/et_name_realname"
+            style="@style/long_font" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:background="@color/btnTextColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="身份证号:"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:hint="身份证号"
+            android:layout_centerVertical="true"
+            android:textColorHint="@color/light_white"
+            android:layout_marginLeft="@dimen/px_34"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_marginRight="@dimen/px_30"
+            android:id="@+id/et_identity_realname"
+            android:textColor="@color/subordinationContentTextColor"
+            style="@style/long_font" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

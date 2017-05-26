@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:animateLayoutChanges="true">
+
+    <android.support.v7.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        app:divider="@drawable/yh_divider_line_vertical"
+        app:showDividers="middle|beginning">
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBgColor"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/yh_btn_press_transparent_grey"
+                android:src="@drawable/ic_action_close" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/px_20"
+                android:text="@string/payment_user_third_party"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+        <include layout="@layout/yh_include_third_party" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBgColor"
+            android:paddingBottom="@dimen/px_30"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:paddingTop="@dimen/px_30"
+            android:weightSum="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_integral_dialog_lack"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_26" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_remain_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/px_text_26"
+                tools:text="100" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_pay_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_orange"
+            android:gravity="center"
+            android:text="@string/payment_go_pay"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_30" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/pb_progress_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</android.support.v7.widget.ContentFrameLayout>

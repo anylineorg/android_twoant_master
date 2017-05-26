@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的活动"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:id="@+id/tab_title_myactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/btnTextColor"
+        app:tabSelectedTextColor="@color/navigationTextColor"
+        app:tabTextColor="@color/principalTitleTextColor"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/px_2"
+        android:id="@+id/vp_content_myactivity"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

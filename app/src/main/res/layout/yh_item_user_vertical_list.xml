@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_btn_press_transparent_grey"
+    android:clickable="true"
+    android:id="@+id/ll_vertical_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:padding="@dimen/px_20"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="@dimen/px_90"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:padding="@dimen/px_20"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_26"
+        tools:text="昵称" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_22"
+        tools:text="时间" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

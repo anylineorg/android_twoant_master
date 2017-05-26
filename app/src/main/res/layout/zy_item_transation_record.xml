@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_item_money_transation"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontcolor_2"
+            android:textSize="@dimen/px_text_30"
+            tool:text="+200.00"/>
+        <TextView
+            android:id="@+id/tv_item_name_transation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_32"
+            android:textColor="@color/bottom_bar_normal_bg"
+            tool:text="充值-钱包"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/px_10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_red_transation_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_28"
+            android:textColor="@color/subordinationContentTextColor"
+            tool:text="红包:10"/>
+        <TextView
+            android:id="@+id/tv_integral_transation_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_28"
+            android:textColor="@color/subordinationContentTextColor"
+            tool:text="积分:10"/>
+        <TextView
+            android:id="@+id/tv_yue_transation_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_28"
+            android:textColor="@color/subordinationContentTextColor"
+            tool:text="钱包:10"/>
+        <TextView
+            android:id="@+id/tv_chongzhi_transation_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_28"
+            android:textColor="@color/subordinationContentTextColor"
+            tool:text="支付宝10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/px_10"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_item_time_transation"
+            android:layout_marginTop="@dimen/px_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_28"
+            android:textColor="@color/subordinationContentTextColor"
+            tool:text="2016-12-12 16:00"/>
+    </LinearLayout>
+
+</LinearLayout>

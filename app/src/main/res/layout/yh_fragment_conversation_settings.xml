@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteBgColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+
+        <android.support.v7.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            app:divider="@drawable/yh_divider_line"
+            app:dividerPadding="@dimen/px_20"
+            app:showDividers="middle">
+
+            <include layout="@layout/yh_view_divider_item" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_black_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/yh_white_grey_bg_btn_press"
+                android:clickable="true"
+                android:padding="@dimen/px_20"
+                android:text="@string/book_black"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px_5"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_35"
+                android:text="@string/notify"
+                android:textColor="@color/btn_gray_pressed"
+                android:textSize="@dimen/px_text_26" />
+
+            <net.twoant.master.ui.chat.widget.CustomCheckBox
+                android:id="@+id/cb_switch_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                app:text="@string/newnotify"
+                app:textColor="@color/principalTitleTextColor"
+                app:textSize="@dimen/px_text_28" />
+
+            <net.twoant.master.ui.chat.widget.CustomCheckBox
+                android:id="@+id/cb_switch_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                app:text="@string/voice"
+                app:textColor="@color/principalTitleTextColor"
+                app:textSize="@dimen/px_text_28" />
+
+            <net.twoant.master.ui.chat.widget.CustomCheckBox
+                android:id="@+id/cb_switch_vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                app:text="@string/shake"
+                app:textColor="@color/principalTitleTextColor"
+                app:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px_5"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_35"
+                android:text="@string/chatset"
+                android:textColor="@color/btn_gray_pressed"
+                android:textSize="@dimen/px_text_26" />
+
+            <net.twoant.master.ui.chat.widget.CustomCheckBox
+                android:id="@+id/cb_switch_speaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                app:text="@string/yangshengqi"
+                app:textColor="@color/principalTitleTextColor"
+                app:textSize="@dimen/px_text_28" />
+
+            <net.twoant.master.ui.chat.widget.CustomCheckBox
+                android:id="@+id/cb_switch_delete_msg_when_exit_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                app:text="@string/delete_msg_when_exit_group"
+                app:textColor="@color/principalTitleTextColor"
+                app:textSize="@dimen/px_text_28" />
+
+            <net.twoant.master.ui.chat.widget.CustomCheckBox
+                android:id="@+id/cb_switch_auto_accept_group_invitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                app:text="@string/auto_accept_group_invitation"
+                app:textColor="@color/principalTitleTextColor"
+                app:textSize="@dimen/px_text_28" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

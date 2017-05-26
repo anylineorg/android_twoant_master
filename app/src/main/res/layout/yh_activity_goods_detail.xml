@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.twoant.master.ui.main.activity.BuyerGoodsDetailActivity">
+
+    <include layout="@layout/yh_simple_address_scroll_tool_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_90"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/yh_include_banner_view" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_shop_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="@dimen/px_20"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28"
+                android:textStyle="bold"
+                tools:text="商品标题" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:weightSum="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_merchant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:clickable="true"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_26"
+                    tools:text="商家：牛牛" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_click_cout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColor="@color/subordinationContentTextColor"
+                    android:textSize="@dimen/px_text_20"
+                    tools:text="点击量:1000" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:weightSum="2">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:minWidth="@dimen/px_140"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_26"
+                    tools:text="价格:100" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px_60"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_subtract_goods_count"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_60"
+
+                    android:background="@drawable/yh_btn_press_transparent_grey"
+                    android:src="@drawable/icon_goodsdetail_reduce"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_number_goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_60"
+                    android:gravity="center"
+                    android:minWidth="@dimen/px_40"
+
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_22"
+                    android:visibility="invisible"
+                    tools:text="0" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_add_goods_count"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_60"
+                    android:visibility="invisible"
+                    android:background="@drawable/yh_btn_press_transparent_grey"
+                    android:src="@drawable/icon_goodsdetail_plus" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_collect_goods_detail"
+                    android:layout_width="@dimen/px_60"
+                    android:layout_height="@dimen/px_60"
+                    android:background="@drawable/yh_btn_press_transparent_grey"
+                    android:padding="@dimen/px_4"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_collection_uncheck" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_share_goods_detail"
+                    android:layout_width="@dimen/px_60"
+                    android:layout_height="@dimen/px_60"
+                    android:visibility="invisible"
+                    android:background="@drawable/yh_btn_press_transparent_grey"
+                    android:padding="@dimen/px_4"
+                    android:src="@drawable/ic_home_share" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_connect_merchant"
+                    android:layout_width="@dimen/px_60"
+                    android:layout_height="@dimen/px_60"
+                    android:background="@drawable/yh_btn_press_transparent_grey"
+                    android:padding="@dimen/px_4"
+                    android:src="@drawable/ic_home_service" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yh_bg_underline"
+                android:gravity="center"
+                android:padding="@dimen/px_20"
+                android:text="@string/merchant_goods_detail"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26" />
+
+            <WebView
+                android:id="@+id/wv_goods_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <net.twoant.master.ui.main.widget.shopping_cart.BuyCarView
+        android:id="@+id/bcv_buy_car_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!-- <android.support.v4.widget.SwipeRefreshLayout
+        android:orientation="vertical"
+        android:background="@color/btnTextColor"
+        android:id="@+id/swipe_refresh_waitpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+    <net.twoant.master.widget.ScrollHeaderLinearLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroundColor">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:id="@+id/aa_include"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"
+               android:background="@color/btnTextColor"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+
+               <android.support.v7.widget.AppCompatImageView
+                   android:id="@+id/iv_back"
+                   android:layout_width="@dimen/px_107"
+                   android:layout_height="@dimen/px_107"
+                   android:layout_alignParentLeft="true"
+                   android:src="@drawable/gray_arrow" />
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/tv_title_integral"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/px_80"
+                   android:text="积分"
+                   android:textColor="@color/principalTitleTextColor"
+                   android:textSize="@dimen/px_text_36" />
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/tv_getintegral_integral"
+                   android:padding="@dimen/px_10"
+                   android:layout_centerVertical="true"
+                   android:layout_width="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:textColor="@color/navigationTextColor"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="@dimen/px_16"
+                   android:textSize="@dimen/px_text_32"
+                   android:text="积分充值"/>
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_marginTop="@dimen/px_2"
+               android:layout_width="match_parent"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_360">
+               <LinearLayout
+                   android:layout_centerInParent="true"
+                   android:layout_width="@dimen/px_300"
+                   android:orientation="vertical"
+                   android:gravity="center_horizontal"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:layout_marginTop="@dimen/px_20"
+                       android:layout_width="@dimen/px_140"
+                       android:layout_height="@dimen/px_140"
+                       android:background="@drawable/jicen_center"/>
+                   <TextView
+                       android:layout_marginTop="@dimen/px_10"
+                       android:gravity="center_horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/px_text_34"
+                       android:textColor="@color/principalTitleTextColor"
+                       android:text="我的积分"/>
+                   <TextView
+                       android:gravity="center_horizontal"
+                       android:id="@+id/tv_num_integral"
+                       android:layout_marginTop="@dimen/px_6"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="@dimen/px_20"
+                       android:textColor="@color/navigationTextColor"
+                       android:textSize="@dimen/px_text_50"
+                       android:singleLine="true"
+                       tool:text="50555550"/>
+               </LinearLayout>
+           </RelativeLayout>
+       </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_selecte_integral"
+            android:paddingTop="@dimen/px_0"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:paddingBottom="@dimen/px_0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_90">
+            <TextView
+                android:id="@+id/tv_month_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/px_text_38"
+                android:layout_marginLeft="@dimen/px_10"
+                android:textColor="@color/subordinationTitleTextColor"
+                tool:text="12月"/>
+            <ImageView
+                android:layout_width="@dimen/px_70"
+                android:layout_height="@dimen/px_60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/write_huodong_time"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_integral"
+            android:layout_below="@+id/aa_include"
+            android:layout_marginTop="@dimen/px_10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_tablayout_integral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnTextColor"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabIndicatorColor="@color/btnTextColor"
+                app:tabSelectedTextColor="@color/navigationTextColor"
+                app:tabTextColor="@color/principalTitleTextColor"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_10"
+                android:paddingTop="@dimen/px_30"
+                android:paddingBottom="@dimen/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_34"
+                    android:textStyle="bold"
+                    android:text="总计"/>
+                <TextView
+                    android:id="@+id/tv_total_integral"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/navigationTextColor"
+                    android:layout_width="wrap_content"
+                    tool:text="+2500"
+                    android:layout_marginRight="@dimen/px_10"
+                    android:textSize="@dimen/px_text_34"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_vipager_integral"
+                android:layout_marginTop="@dimen/px_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </net.twoant.master.widget.ScrollHeaderLinearLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:id="@+id/fab_back_top"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/yh_scroll_top_bg" />
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</FrameLayout>

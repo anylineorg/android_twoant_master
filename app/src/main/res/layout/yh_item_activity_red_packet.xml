@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RecyclerViewItemStyle"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_include_activity_header" />
+
+    <include layout="@layout/yh_include_red_packet" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_details_footer_red_packet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/entered_merchant_text"
+            android:textSize="@dimen/px_text_28"
+            tools:text="北京-香港4/5天3夜自由行" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_reader"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_22" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_read_count_footer_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/editMenuColor"
+            android:textSize="@dimen/px_text_22"
+            tools:text="5000" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_time"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_22" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:paddingTop="@dimen/px_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_date_footer_red_packet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_22"
+            tools:text="北京-香港4/5天3夜自由行" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_red_packet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/currentSelectColor"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

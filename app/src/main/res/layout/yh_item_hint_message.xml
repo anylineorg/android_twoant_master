@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_content_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:textSize="@dimen/px_text_26"
+        tools:text="内容" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_skip_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_action_right_arrows"
+        android:drawableRight="@drawable/ic_action_right_arrows"
+        android:gravity="center_vertical|end"
+        android:padding="@dimen/px_10"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_30"
+        tools:text="跳转" />
+
+</android.support.v7.widget.LinearLayoutCompat>

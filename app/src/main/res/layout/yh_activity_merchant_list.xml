@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="net.twoant.master.ui.main.activity.MerchantListActivity">
+
+    <include layout="@layout/yh_simple_address_scroll_tool_bar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh_merchant_list"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteBgColor" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_back_top"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_80"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/px_48"
+        android:layout_marginEnd="@dimen/px_32"
+        android:layout_marginRight="@dimen/px_32"
+        android:background="@android:color/transparent"
+        android:src="@drawable/yh_scroll_top_bg"
+        app:layout_behavior="@string/floating_button_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

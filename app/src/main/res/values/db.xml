@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="DATABASE_INFO">
+        <item>msg.db</item>
+        <item>1</item>
+    </array>
+
+    <array name="CREATE_TABLE_SQL">
+        <item>CREATE TABLE msg_tb (id INTEGER PRIMARY KEY AUTOINCREMENT,type INTEGER,from TEXT,msg TEXT,state INTEGER)</item>
+    </array>
+
+    <array name="UPDATE_TABLE_SQL">
+        <item></item>
+    </array>
+
+</resources>

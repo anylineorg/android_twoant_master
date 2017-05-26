@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBgColor">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/action_info"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/tv_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:padding="@dimen/px_15"
+        android:src="@drawable/ic_action_close" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_hint_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="@dimen/px_10"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:text="@string/action_info_name"
+        android:textColor="@color/subordinationTitleTextColor" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint_name"
+        android:layout_marginEnd="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:background="@drawable/yh_bg_grey_border"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_10"
+        android:paddingTop="@dimen/px_10"
+        android:textColor="@color/subordinationTitleTextColor" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_hint_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginBottom="@dimen/px_10"
+        android:layout_marginTop="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:text="@string/action_info_phone"
+        android:textColor="@color/subordinationTitleTextColor" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint_phone"
+        android:layout_marginEnd="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:background="@drawable/yh_bg_grey_border"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_10"
+        android:paddingTop="@dimen/px_10"
+        android:textColor="@color/subordinationTitleTextColor" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone"
+        android:layout_marginTop="@dimen/px_50"
+        android:background="@drawable/yh_btn_press_orange"
+        android:text="@string/action_info_apply"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_26" />
+
+</RelativeLayout>

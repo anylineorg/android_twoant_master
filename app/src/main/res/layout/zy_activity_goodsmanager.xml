@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightGreyColor"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_back_goodsmanager"
+            android:layout_width="wrap_content"
+            android:background="@drawable/zy_selector_bg"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gray_arrow" />
+            <TextView
+                android:padding="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_70"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品管理"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_publish_goodsmanager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/title_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:id="@+id/tab_title_myactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/btnTextColor"
+        app:tabSelectedTextColor="@color/navigationTextColor"
+        app:tabTextColor="@color/principalTitleTextColor"/>
+
+    <net.twoant.master.widget.NoScrollViewPager
+        android:layout_marginTop="@dimen/px_2"
+        android:id="@+id/vp_content_myactivity"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

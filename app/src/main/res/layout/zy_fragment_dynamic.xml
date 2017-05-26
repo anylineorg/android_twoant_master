@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <net.twoant.master.widget.ParallaxListView
+        android:id="@+id/lv_dynamic"
+        android:background="@color/whiteBgColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/incloud_titile_dynamic"
+        android:layout_width="match_parent"
+        android:background="@drawable/zy_dynamic_bg"
+        android:layout_height="?attr/actionBarSize">
+        <View
+            android:id="@+id/toolbar_bg_merchant_home_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/navigationTextColor" />
+    <ImageView
+             android:id="@+id/iv_back"
+             android:layout_centerVertical="true"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:src="@drawable/back" />
+        <TextView
+            android:padding="@dimen/px_10"
+            android:layout_marginLeft="@dimen/px_70"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好友动态"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="@dimen/px_text_32" />
+
+        <ImageView
+           android:padding="@dimen/px_10"
+            android:id="@+id/tv_publish_dynamic"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_marginRight="@dimen/px_10"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_add_nomal"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</FrameLayout>

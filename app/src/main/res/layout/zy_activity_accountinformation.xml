@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户信息"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tel_accountinfo"
+        android:layout_marginTop="@dimen/px_16"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_16"
+        android:background="@color/btnTextColor"
+        android:layout_height="@dimen/px_100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/px_text_32"
+            android:text="手机号"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/px_text_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_right"
+            android:layout_marginRight="@dimen/px_10" />
+
+        <TextView
+            android:layout_marginRight="@dimen/px_36"
+            android:id="@+id/tv_phone_account_information"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/px_text_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tool:text="132****1210"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fixlogin_accountinformation"
+        android:layout_marginTop="@dimen/px_2"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_16"
+        android:background="@color/btnTextColor"
+        android:layout_height="@dimen/px_100">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_right"
+            android:layout_marginRight="@dimen/px_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_32"
+            android:layout_centerVertical="true"
+            android:text="修改登录密码"
+            android:id="@+id/textView6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fixpay_accountinformation"
+        android:layout_marginTop="@dimen/px_2"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_16"
+        android:background="@color/btnTextColor"
+        android:layout_height="@dimen/px_100">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_32"
+            android:text="重置支付密码"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_right"
+            android:layout_marginRight="@dimen/px_10"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_abut_accountinformation"
+        android:layout_marginTop="@dimen/px_2"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_16"
+        android:background="@color/btnTextColor"
+        android:layout_height="@dimen/px_100">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_32"
+            android:text="联系地址"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_right"
+            android:layout_marginRight="@dimen/px_10"/>
+    </RelativeLayout>
+</LinearLayout>

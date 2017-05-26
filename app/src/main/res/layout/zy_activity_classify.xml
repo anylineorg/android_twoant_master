@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@color/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/btnTextColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/gray_arrow" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px_18"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/px_text_32" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类管理"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_36"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contain_classify"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_width="match_parent"
+            android:background="@color/btnTextColor"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <!--   <android.support.v7.widget.RecyclerView
+               android:id="@+id/rv_classlist_classify"
+               android:background="@color/btnTextColor"
+               android:layout_marginTop="@dimen/px_10"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           </android.support.v7.widget.RecyclerView>-->
+
+    </LinearLayout>
+</ScrollView>

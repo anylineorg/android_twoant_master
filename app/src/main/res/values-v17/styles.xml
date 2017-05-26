@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MerchantEnteredLeftText" parent="WrapBoth">
+        <item name="android:textColor">@color/entered_merchant_text</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+        <item name="android:layout_marginRight">@dimen/px_10</item>
+        <item name="android:layout_marginEnd">@dimen/px_10</item>
+
+    </style>
+</resources>

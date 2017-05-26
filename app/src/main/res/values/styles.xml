@@ -1,0 +1,520 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AiSouAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+    </style>
+
+    <!--交流中心的样式-->
+    <style name="AiSouAppTheme.ChatTheme">
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+    </style>
+
+    <style name="AiSouAppTheme.SelectLocation">
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="android:textColorHint">@color/subordinationContentTextColor</item>
+        <item name="android:textColorPrimary">@color/whiteBgColor</item>
+    </style>
+
+    <style name="ShareElementWindowBg" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/whiteBgColor</item>
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+    </style>
+
+    <!--极光推送弹窗-->
+    <style name="JPushDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AnimFade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+    </style>
+
+    <style name="TakePhotoToolbarTheme" parent="AiSouAppTheme">
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:color">@color/whiteTextColor</item>
+        <item name="android:textColorPrimary">@color/whiteTextColor</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorSecondaryInverse">@android:color/white</item>
+        <item name="colorAccent">@color/whiteTextColor</item>
+    </style>
+
+    <style name="AiSouAppTheme.ChatToolbarTheme">
+        <item name="actionMenuTextColor">@color/whiteTextColor</item>ToolbarOverflowStyle
+        <item name="android:actionOverflowButtonStyle">@style/ToolbarOverflowStyle</item>
+        <item name="actionOverflowMenuStyle">@style/ToolbarOverflowStyle</item>
+        <item name="actionOverflowButtonStyle">@style/ToolbarOverflowStyle</item>
+    </style>
+
+
+    <style name="ToolbarOverflowStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:src">@drawable/ic_action_add</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@drawable/yh_menu_white_bg_arc</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:dropDownVerticalOffset">@dimen/px_20</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/principalTitleTextColor</item>
+    </style>
+
+
+    <style name="GreyWindowBackgroundTheme" parent="AiSouAppTheme">
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+
+    <style name="AiSouAppTheme.WhiteWindowBackground">
+        <item name="android:windowBackground">@color/whiteBgColor</item>
+    </style>
+
+    <!---->
+    <style name="TransparentWindowBg" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+    </style>
+
+
+    <!-- 弹出框动画 由下至上 -->
+    <style name="DialogStyle_Y" parent="Animation.AppCompat.Dialog">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/yh_dialog_y_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/yh_dialog_y_exit</item>
+    </style>
+
+
+    <!-- 弹出框动画 由下至上 -->
+    <style name="DialogStyle_X" parent="Animation.AppCompat.Dialog">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/yh_dialog_x_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/yh_dialog_x_exit</item>
+    </style>
+
+    <style name="ThemeLightDialog.X">
+        <item name="android:windowAnimationStyle">@style/DialogStyle_X</item>
+    </style>
+
+    <style name="ThemeLightDialog.Y">
+        <item name="android:windowAnimationStyle">@style/DialogStyle_Y</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="ThemeLightDialog" parent="AlertDialog.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <!--RecycleView item root主题-->
+    <style name="RecyclerViewItemStyle" parent="WidthMatchHeightWrap">
+        <item name="android:background">@drawable/yh_item_press_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FitsSystemWindows" parent="AiSouAppTheme">
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AiSouAppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@color/whiteBgColor</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="android:Widget">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="behavior_peekHeight">auto</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">false</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/whiteBgColor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="android:textColorPrimary">@color/principalTitleTextColor</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogStyle.Update">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="OrderPaymentStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="android:textColorPrimary">@color/principalTitleTextColor</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogStyle_Y</item>
+    </style>
+
+    <style name="AlertDialogTransparentStyle" parent="AlertDialog.AppCompat.Light">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="StartPageTheme" parent="AiSouAppTheme">
+        <item name="android:windowBackground">@drawable/ic_start_page_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MatchBoth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WidthMatchHeightWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthWrapHeightMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapBoth">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthWeightHeightWrap">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="HeightWeightWidthWrap">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <!--大的的btn 样式 都用这个-->
+    <style name="LargeBtnPress" parent="WidthMatchHeightWrap">
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+    </style>
+
+    <!--TextInputLayout 错误样式-->
+    <style name="TextInputLayoutError">
+        <item name="android:textColor">@color/errorHintColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextInputLayoutCounterOverflow">
+        <item name="android:textColor">@color/errorHintColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextInputLayoutCounter">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextInputLayoutHint">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MerchantEnteredInputText.TextInputLayoutHint">
+        <item name="android:textColor">@color/entered_merchant_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="EditText" parent="WidthMatchHeightWrap">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/principalTitleTextColor</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:background">@color/whiteBgColor</item>
+        <item name="android:textColor">@color/principalTitleTextColor</item>
+    </style>
+
+    <!--普通dialog-->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MainCategory" parent="WrapBoth">
+        <item name="android:layout_marginTop">@dimen/px_10</item>
+        <item name="android:textColor">@color/principalTitleTextColor</item>
+        <item name="android:textSize">@dimen/px_text_26</item>
+    </style>
+
+    <!--商家入驻 填写信息类型 -->
+    <style name="MerchantEnteredInputText">
+        <item name="android:layout_height">@dimen/px_100</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/px_10</item>
+        <item name="android:paddingRight">@dimen/px_20</item>
+        <item name="android:paddingLeft">@dimen/px_20</item>
+        <item name="android:paddingBottom">@dimen/px_10</item>
+    </style>
+
+    <!--商家入驻 选择照片-->
+    <style name="MerchantEnteredSelectImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px_150</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/px_20</item>
+        <item name="android:paddingRight">@dimen/px_20</item>
+    </style>
+
+    <!--商家入驻 左侧 提示文字-->
+    <style name="MerchantEnteredLeftText" parent="WrapBoth">
+        <item name="android:textColor">@color/entered_merchant_text</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+        <item name="android:layout_marginRight">@dimen/px_10</item>
+    </style>
+
+    <!--商家入驻 右侧 提示文字-->
+    <style name="MerchantEnteredRightHintText" parent="WidthMatchHeightWrap">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/entered_merchant_input</item>
+        <item name="android:textColorHint">@color/merchantHintTextColor</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+    </style>
+
+    <style name="umeng_socialize_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/umeng_socialize_divider</item>
+    </style>
+
+    <style name="AlertDialogStyleZY" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AiSouAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AiSouAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--zxing-->
+    <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CaptureTheme" parent="android:Theme.Holo">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <!--实名认证-->
+    <style name="long_font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/px_text_34</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <!--自定义键盘-->
+    <style name="InputTextView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--注册页面popwindow-->
+    <style name="pop_invite_anim">
+        <item name="android:windowEnterAnimation">@anim/pop_invite_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_invite_hide</item>
+    </style>
+
+    <style name="ACPLDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="umeng_socialize_action_bar_itemlayout">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="umeng_socialize_action_bar_item_im">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="umeng_socialize_action_bar_item_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:text">999</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="umeng_socialize_popup_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar" />
+
+
+    <style name="umeng_socialize_list_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/umeng_socialize_list_item_bgcolor</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="umeng_socialize_edit_padding">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/umeng_socialize_list_item_bgcolor</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <!--收货地址-->
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/zy_checkbox_style</item>
+    </style>
+    <!--个人活动详情-->
+    <style name="CustomActivityCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/zy_checkactivitybox_style</item>
+    </style>
+
+    <!--从右向左开启动画-->
+    <style name="Anim_fade" parent="AiSouAppTheme">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_to_right</item>
+    </style>
+</resources>

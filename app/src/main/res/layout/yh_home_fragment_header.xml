@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header_content_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_include_banner_view" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_152"
+        android:background="@color/whiteBgColor"
+        android:gravity="center_vertical"
+        android:weightSum="4">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_merchant_main_activity"
+            style="@style/WidthWeightHeightWrap"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_70"
+                android:layout_height="@dimen/px_56"
+                android:src="@drawable/ic_merchant" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MainCategory"
+                android:text="@string/main_page_merchant" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_activity_main_activity"
+            style="@style/WidthWeightHeightWrap"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_70"
+                android:layout_height="@dimen/px_56"
+                android:src="@drawable/ic_activity" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MainCategory"
+                android:text="@string/main_page_activity" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_commodity_main_activity"
+            style="@style/WidthWeightHeightWrap"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_70"
+                android:layout_height="@dimen/px_56"
+                android:src="@drawable/ic_commodity" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MainCategory"
+                android:text="@string/main_page_discover" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_entered_main_activity"
+            style="@style/WidthWeightHeightWrap"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_70"
+                android:layout_height="@dimen/px_56"
+                android:src="@drawable/ic_entered" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MainCategory"
+                android:text="@string/main_page_entered" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

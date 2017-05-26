@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_btn_press_transparent_grey"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/px_100"
+    android:paddingBottom="@dimen/px_12"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_12"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_header_image"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="@dimen/px_100"
+        android:src="@drawable/ic_def_circle" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginStart="@dimen/px_10"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/px_10"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="昵称" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/px_10"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="昵称" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_remove"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="@dimen/px_90"
+        android:background="@drawable/yh_press_circle_bg"
+        android:text="@string/chat_remove_black_list"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_24" />
+
+</android.support.v7.widget.LinearLayoutCompat>

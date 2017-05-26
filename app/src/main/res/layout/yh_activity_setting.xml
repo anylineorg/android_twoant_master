@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle"
+    tools:context="net.twoant.master.ui.my_center.activity.SettingActivity">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <net.twoant.master.ui.chat.widget.CustomCheckBox
+        android:id="@+id/cb_switch_show_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:padding="@dimen/px_20"
+        app:text="@string/setting_show_img"
+        app:textColor="@color/principalTitleTextColor"
+        app:textSize="@dimen/px_text_28" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_26"
+            tools:text="当前缓存大小：500m" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_clean_cache"
+            android:layout_width="@dimen/px_90"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_orange_bg_btn_press"
+            android:gravity="center"
+            android:text="@string/setting_clean_btn"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_24" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

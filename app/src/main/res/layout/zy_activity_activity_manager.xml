@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/lightGreyColor"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"/>
+
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="@dimen/px_10"
+        android:id="@+id/tab_FindFragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/btnTextColor"
+        app:tabSelectedTextColor="@color/navigationTextColor"
+        app:tabTextColor="@color/principalTitleTextColor"/>
+
+
+    <net.twoant.master.widget.NoScrollViewPager
+        android:id="@+id/vp_findfragment_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

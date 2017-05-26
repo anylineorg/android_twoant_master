@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreyColor"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back_adminadd_page"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="start"
+            android:background="@drawable/yh_white_transparent_bg_btn_press"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加管理员"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.ContentFrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lightGreyColor"
+            android:layout_height="8dp"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBgColor">
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/search" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/tv_textkey_administrator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="请输入对方蚂蚁号" />
+        </android.support.v7.widget.ContentFrameLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_search_administrator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/yh_white_transparent_bg_btn_press"
+            android:textColor="@color/navigationTextColor"
+            android:text="搜 索"
+            android:textSize="18sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <ListView
+        android:id="@+id/lv_adminstorlist_administrator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGreyColor"
+        android:divider="@color/lightGreyColor"
+        android:dividerHeight="3dp" />
+
+</android.support.v7.widget.LinearLayoutCompat>

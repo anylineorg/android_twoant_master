@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_160"
+        android:weightSum="3">
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/cfl_dynamic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yh_white_grey_bg_btn_press"
+            android:clickable="true"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/px_10"
+                android:drawableTop="@drawable/icon_huodong"
+                android:gravity="center"
+                android:text="@string/category_dynamic"
+                android:textSize="@dimen/px_text_24" />
+
+            <View
+                android:id="@+id/hint_dynamic"
+                android:layout_width="@dimen/px_30"
+                android:layout_height="@dimen/px_30"
+                android:layout_margin="@dimen/px_10"
+                android:visibility="gone"
+                android:layout_gravity="end|top"
+                android:background="@drawable/ease_unread_dot"
+                android:padding="@dimen/px_10" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/cfl_nearby"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yh_white_grey_bg_btn_press"
+            android:clickable="true"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/px_10"
+                android:drawableTop="@drawable/icon_huodong"
+                android:gravity="center"
+                android:text="@string/category_nearby"
+                android:textSize="@dimen/px_text_24" />
+
+            <View
+                android:id="@+id/hint_nearby"
+                android:layout_width="@dimen/px_30"
+                android:layout_margin="@dimen/px_10"
+                android:layout_height="@dimen/px_30"
+                android:layout_gravity="end|top"
+                android:visibility="gone"
+                android:background="@drawable/ease_unread_dot"
+                android:padding="@dimen/px_10" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/cfl_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yh_white_grey_bg_btn_press"
+            android:clickable="true"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/px_10"
+                android:drawableTop="@drawable/icon_huodong"
+                android:gravity="center"
+                android:text="@string/category_action"
+                android:textSize="@dimen/px_text_24" />
+
+            <View
+                android:id="@+id/hint_action"
+                android:layout_width="@dimen/px_30"
+                android:layout_height="@dimen/px_30"
+                android:layout_gravity="end|top"
+                android:layout_margin="@dimen/px_10"
+                android:visibility="gone"
+                android:background="@drawable/ease_unread_dot"
+                android:padding="@dimen/px_10" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteBgColor" />
+
+</android.support.v7.widget.LinearLayoutCompat>

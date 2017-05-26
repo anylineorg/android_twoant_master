@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_dialog_bg_top_circle"
+    android:minWidth="@dimen/px_400"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/px_20"
+        android:text="@string/action_integral_dialog_balance_not_enough"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@drawable/yh_bg_color_primary" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@color/mediumGreyColor" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:text="@string/action_integral_dialog_know"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

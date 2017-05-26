@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/px_20">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head_img_activity_header"
+        android:src="@drawable/ic_def_circle"
+        android:layout_width="@dimen/px_48"
+        android:layout_height="@dimen/px_48" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name_activity_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/entered_merchant_input"
+        android:textSize="@dimen/px_text_28"
+        tools:text="百程旅行网" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_distance_activity_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/subordinationContentTextColor"
+        android:textSize="@dimen/px_text_22"
+        tools:text="100" />
+
+</android.support.v7.widget.LinearLayoutCompat>

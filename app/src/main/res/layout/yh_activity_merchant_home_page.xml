@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.twoant.master.widget.ScrollHeaderLinearLayout
+        android:id="@+id/scrollableLayout_merchant_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_80"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBgColor"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <net.twoant.master.widget.MarqueeTextView
+                    android:id="@+id/tv_address_header"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px_80"
+                    android:layout_weight="1"
+                    android:background="@color/whiteBgColor"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="@dimen/px_20"
+                    android:drawableStart="@drawable/ic_address"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:singleLine="true"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_24"
+                    tools:text="黄岛区" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_distance_merchant_home_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_24"
+                    tools:text="120km" />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_name_merchant_home_page"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/px_20"
+                    android:paddingTop="@dimen/px_20"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_30"
+                    android:textStyle="bold"
+                    tools:text="商铺名称45654654654654454545545654654654654" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_shop_server_merchant_home_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yh_image_btn_press_gray"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/ic_home_service"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.AppCompatImageButton
+
+                    android:id="@+id/btn_share_merchant_home_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yh_image_btn_press_gray"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/ic_home_share"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_collection_merchant_home_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yh_image_btn_press_gray"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/ic_collection_uncheck"
+                    android:visibility="invisible" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_20"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/px_20">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/yunfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="0dp"
+                    android:text="运费"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/qisong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="0dp"
+                    android:text="满多少元起送"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26" />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="@string/merchant_phone"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_telephone_merchant_home_page"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26"
+                    tools:text="18812345678" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_click_merchant_home_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26"
+                    tools:text="点击量:12000次" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_shop_address_merchant_home_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26"
+                tools:text="地址:" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="@string/merchant_recommend"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/yh_bg_grey_border"
+                android:orientation="vertical"
+                app:divider="@drawable/yh_divider_line"
+                app:showDividers="middle">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_recommend_merchant_home_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:lineSpacingMultiplier="1.3"
+                    android:maxLines="3"
+                    android:padding="@dimen/px_20"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26"
+                    tools:text="我是一家有风范的商家,坑爹呢，
+                我曹，坑爹呢，坑爹呢，坑爹呢，坑爹呢，坑爹呢
+                ，坑爹呢，坑爹呢，坑爹呢，坑爹呢，坑爹呢" />
+
+                <android.support.v7.widget.ContentFrameLayout
+                    android:id="@+id/fl_show_more_description_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yh_image_btn_press_gray"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_show_more_description"
+                        android:layout_width="30dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:clickable="false" />
+                </android.support.v7.widget.ContentFrameLayout>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <com.amap.api.maps.TextureMapView
+                android:id="@+id/tmv_gd_map"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/px_400" />
+
+            <include layout="@layout/yh_view_divider_item" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:background="@color/whiteBgColor"
+            android:layout_height="0dp"
+            app:tabBackground="@drawable/yh_white_grey_bg_btn_press"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/subordinationTitleTextColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/mediumGreyColor" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_container_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </net.twoant.master.widget.ScrollHeaderLinearLayout>
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/px_80"
+        android:background="@android:color/transparent">
+
+        <View
+            android:id="@+id/toolbar_bg_merchant_home_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/navigationTextColor" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back_merchant_home_page"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:visibility="gone"
+            android:src="@drawable/yh_press_back_circle_bg" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_shop_name_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="@dimen/px_100"
+            android:paddingRight="@dimen/px_100"
+            android:textColor="@color/whiteTextColor"
+
+            android:textSize="@dimen/px_text_28"
+            android:visibility="gone" />
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"
+        android:layout_gravity="bottom"
+        android:background="@drawable/yh_btn_press_orange"
+        android:text="@string/merchant_pay"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+    <ViewStub
+        android:id="@+id/view_stub_buy_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"
+        android:layout_gravity="bottom"
+        android:layout="@layout/yh_stub_buy_card" />
+
+</android.support.design.widget.CoordinatorLayout>

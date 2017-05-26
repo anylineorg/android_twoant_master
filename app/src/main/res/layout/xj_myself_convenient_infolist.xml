@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_my_selt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/convenient_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="@dimen/px_10"
+        android:singleLine="true"
+        android:text="的咖啡哈科技gals肌肤咖喱近代商法上了解到拉山口哈洛加斯拉萨jfk是个"
+        android:textSize="@dimen/px_32"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_40">
+
+        <TextView
+            android:id="@+id/convenient_info_click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="阅览:9000次"
+            android:textSize="@dimen/px_24" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:text="删除"
+            android:textSize="@dimen/px_24" />
+
+        <TextView
+            android:id="@+id/convenient_info_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2017-11-11 11：30"
+            android:textSize="@dimen/px_24"
+            android:paddingLeft="@dimen/px_10"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/convenient_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/px_8"
+        android:maxLines="3"
+        android:padding="@dimen/px_10"
+        android:text="的拉哈拉哈 武器有人去屋怄气王瑞琪哦群殴若区容器柔情我哦亲微弱IQ无融券微弱秋容起舞容我入群我去热情哦我如群殴我拉斯杀了开发和ia'l'h'fi'la's'j撒dhl看良好的撒卡嘎手机发噶啦基地啊是符合"
+        android:textSize="@dimen/px_28" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_10">
+
+        <ImageView
+            android:id="@+id/iv_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_6"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_def_large" />
+
+        <ImageView
+            android:id="@+id/iv_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_6"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_def_large" />
+
+        <ImageView
+            android:id="@+id/iv_info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_6"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_def_large" />
+    </LinearLayout>
+
+</LinearLayout>

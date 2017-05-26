@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额充值"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/btnTextColor">
+        <RadioGroup
+            android:id="@+id/rg_group_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_10">
+            <RadioButton
+                android:id="@+id/rb_wx_getcash"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/zy_radiobutton"
+                android:paddingRight="@dimen/px_30"
+                android:text="微信支付"
+                android:drawableLeft="@drawable/weixin"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_36"
+                />
+
+            <View
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:background="@color/cardview_shadow_start_color"/>
+
+            <RadioButton
+                android:id="@+id/rb_ali_getcash"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/zy_radiobutton"
+                android:paddingRight="@dimen/px_30"
+                android:text="支付宝"
+                android:drawableLeft="@drawable/zhifubao"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_36"
+                />
+            <View
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:background="@color/cardview_shadow_start_color"/>
+        </RadioGroup>
+        <!--<RadioGroup
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_wx_getcash"
+                android:padding="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/zy_radiobutton"
+                android:paddingRight="@dimen/px_50"
+                android:text="微信支付"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_36"
+                android:drawableLeft="@drawable/weixin"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/backgroundColor1"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_height="@dimen/px_4"/>
+            <RadioButton
+                android:id="@+id/rb_ali_getcash"
+                android:layout_marginTop="@dimen/px_2"
+                android:padding="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/zy_radiobutton"
+                android:paddingRight="@dimen/px_50"
+                android:text="支付宝支付"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_36"
+                android:drawableLeft="@drawable/zhifubao"
+                />
+        </RadioGroup>-->
+
+</RelativeLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/btnTextColor">
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/zhifubao" />
+
+        <TextView
+            style="@style/long_font"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView32"
+            android:layout_marginLeft="0dp"
+            android:text="支付宝支付" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_back_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/btnTextColor">
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/zhifu_4" />
+
+        <TextView
+            style="@style/long_font"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView33"
+            android:text="银行卡支付" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_back_right" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:background="@color/btnTextColor"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="金额"
+            style="@style/long_font" />
+        <EditText
+            android:id="@+id/et_money_getcash"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal|number"
+            android:background="@null"
+            android:hint="请输充值金额"
+            android:textColorHint="@color/light_white"
+            style="@style/long_font" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_next_getcash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_18"
+        android:layout_marginRight="@dimen/px_18"
+        android:layout_marginTop="@dimen/px_36"
+        android:background="@drawable/zy_frame_btn"
+        android:text="下 一 步"
+        android:textColor="@color/whiteBgColor"
+        android:textSize="@dimen/px_text_35" />
+
+</LinearLayout>

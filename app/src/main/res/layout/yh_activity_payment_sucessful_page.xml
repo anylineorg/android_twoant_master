@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBgColor"
+        android:orientation="vertical"
+        app:divider="@drawable/yh_divider_line_vertical"
+        app:dividerPadding="@dimen/px_20"
+        app:showDividers="middle">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_top_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_300" />
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/payment_receiver"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <net.twoant.master.ui.main.widget.MarqueeTextView
+                android:id="@+id/tv_bargain_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginStart="@dimen/px_10"
+                android:gravity="center_vertical"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28"
+                app:startMarquee="true"
+                tools:text="两只蚂蚁" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/payment_trade_price"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_bargain_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/px_text_28"
+                tools:text="两只蚂蚁" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/payment_trade_date"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_bargain_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28"
+                tools:text="2016-12-12" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/payment_current_state"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/payment_pay_successful"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/payment_platform"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment_platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28"
+                tools:text="微信" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@drawable/yh_btn_press_orange"
+            android:text="@string/payment_complete"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="@dimen/px_text_30" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</ScrollView>

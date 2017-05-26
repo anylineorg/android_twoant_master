@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/common_top_bar_primary"
+    android:gravity="center_vertical">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/left_image"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:background="@drawable/ease_common_tab_bg"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        tools:src="@drawable/yh_press_transparent_white" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/right_image"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@drawable/yh_press_transparent_white"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        tools:src="@drawable/ease_chat_face_pressed" />
+
+</FrameLayout>

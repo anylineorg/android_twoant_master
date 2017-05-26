@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/umeng_socialize_ucenter_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品发布"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36" />
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <android.support.v7.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_marginTop="@dimen/px_8"
+           android:layout_marginBottom="@dimen/px_20"
+           android:layout_height="match_parent">
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:layout_marginTop="@dimen/px_2"
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_107">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:text="商品名称："
+                   android:paddingLeft="@dimen/px_18"
+                   android:paddingRight="@dimen/px_18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/px_107"
+                   android:id="@+id/textView4"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/px_text_28"
+                   android:textColor="@color/principalTitleTextColor" />
+
+               <android.support.v7.widget.AppCompatEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/px_100"
+                   android:inputType="textPersonName"
+                   android:textColor="@color/principalTitleTextColor"
+                   android:id="@+id/edit_product_name" />
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:layout_marginTop="@dimen/px_2"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_140">
+
+                   <android.support.v7.widget.AppCompatTextView
+                       android:text="商品主图："
+                       android:paddingLeft="@dimen/px_18"
+                       android:paddingRight="@dimen/px_18"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:textSize="@dimen/px_text_28"
+                       android:textColor="@color/principalTitleTextColor"
+                       android:id="@+id/textView177" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                           <LinearLayout
+                               android:id="@+id/ll_show_container_publish"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:orientation="horizontal"
+                               android:padding="@dimen/px_6"
+                               >
+                           </LinearLayout>
+                               <android.support.v7.widget.AppCompatImageView
+                                   android:layout_width="@dimen/px_89"
+                                   android:layout_height="@dimen/px_89"
+                                   android:src="@drawable/add"
+                                   android:layout_gravity="center_vertical"
+                                   android:id="@+id/iv_product_add" />
+                           </LinearLayout>
+                    </HorizontalScrollView>
+
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <RelativeLayout
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:id="@+id/edit_product_shcouse"
+               android:clickable="false"
+               android:layout_marginTop="@dimen/px_2"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_107">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:text="选择分类："
+                   android:paddingLeft="@dimen/px_18"
+                   android:paddingRight="@dimen/px_18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/px_107"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/px_text_28"
+                   android:id="@+id/edit_product_type1"
+                   android:textColor="@color/principalTitleTextColor" />
+
+               <Spinner
+                   android:layout_centerVertical="true"
+                   android:id="@+id/sp_selectclass_publish"
+                   android:layout_toRightOf="@id/edit_product_type1"
+                   android:dropDownVerticalOffset="@dimen/px_60"
+                   android:layout_width="@dimen/px_250"
+                   android:layout_height="@dimen/px_60"
+                   android:background="@drawable/sp_list">
+               </Spinner>
+
+           </RelativeLayout>
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:layout_marginTop="@dimen/px_2"
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_107">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:text="商品价格："
+                   android:paddingLeft="@dimen/px_18"
+                   android:paddingRight="@dimen/px_18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/px_107"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/px_text_28"
+                   android:textColor="@color/principalTitleTextColor" />
+               <android.support.v7.widget.AppCompatEditText
+                   android:layout_height="@dimen/px_90"
+                   android:inputType="number|numberDecimal"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:textColor="@color/principalTitleTextColor"
+                   android:id="@+id/edit_product_price" />
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_height="@dimen/px_90"
+                   android:inputType="number|numberDecimal"
+                   android:layout_width="wrap_content"
+                   android:text="单位:"
+                   android:textColor="@color/principalTitleTextColor"/>
+               <android.support.v7.widget.AppCompatEditText
+                   android:id="@+id/et_unit_publishgoods"
+                   android:layout_height="@dimen/px_90"
+                   android:layout_width="@dimen/px_130"
+                   android:hint="可为空"
+                   android:textColor="@color/principalTitleTextColor"/>
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:visibility="gone"
+               android:layout_marginTop="@dimen/px_2"
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_107">
+               <android.support.v7.widget.AppCompatTextView
+                   android:text="商品库存："
+                   android:paddingLeft="@dimen/px_18"
+                   android:paddingRight="@dimen/px_18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/px_107"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/px_text_28"
+                   android:textColor="@color/principalTitleTextColor" />
+               <android.support.v7.widget.AppCompatEditText
+                   android:layout_height="@dimen/px_90"
+                   android:inputType="number"
+                   android:textColor="@color/principalTitleTextColor"
+                   android:layout_width="match_parent"
+                   android:id="@+id/edit_product_count" />
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:layout_marginTop="@dimen/px_2"
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_107">
+               <android.support.v7.widget.AppCompatTextView
+                   android:text="商品亮点："
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/px_107"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="@dimen/px_18"
+                   android:paddingRight="@dimen/px_18"
+                   android:textSize="@dimen/px_text_28"
+                   android:textColor="@color/principalTitleTextColor" />
+
+               <android.support.v7.widget.AppCompatEditText
+                   android:layout_height="@dimen/px_90"
+                   android:inputType="text"
+                   android:textColor="@color/principalTitleTextColor"
+                   android:layout_width="match_parent"
+                   android:id="@+id/edit_product_remark" />
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <jp.wasabeef.richeditor.RichEditor
+               android:layout_marginTop="@dimen/px_2"
+               android:id="@+id/editor_publishgoods"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/px_1"
+               android:padding="@dimen/px_15"
+               android:background="@color/btnTextColor"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/iv_blod_publishactivity"
+                   android:layout_marginLeft="@dimen/px_20"
+                   android:layout_width="@dimen/px_40"
+                   android:layout_gravity="center"
+                   android:layout_height="@dimen/px_40"
+                   android:background="@drawable/aricheditoe_b"/>
+
+               <ImageView
+                   android:id="@+id/iv_underline_publishactivity"
+                   android:layout_marginLeft="@dimen/px_25"
+                   android:layout_width="@dimen/px_40"
+                   android:layout_gravity="center"
+                   android:layout_height="@dimen/px_40"
+                   android:background="@drawable/aricheditoe_u"/>
+
+               <ImageView
+                   android:id="@+id/iv_size_publishactivity"
+                   android:layout_marginLeft="@dimen/px_25"
+                   android:layout_width="@dimen/px_50"
+                   android:layout_gravity="center"
+                   android:layout_height="@dimen/px_40"
+                   android:background="@drawable/aricheditoe_aa"/>
+
+               <ImageView
+                   android:id="@+id/iv_fontcolor_publishactivity"
+                   android:layout_marginLeft="@dimen/px_25"
+                   android:layout_width="@dimen/px_40"
+                   android:layout_gravity="center"
+                   android:layout_height="@dimen/px_40"
+                   android:background="@drawable/aricheditoe_a"/>
+
+               <ImageView
+                   android:id="@+id/iv_selectphoto_publishactivity"
+                   android:layout_marginLeft="@dimen/px_25"
+                   android:layout_width="@dimen/px_40"
+                   android:layout_gravity="center"
+                   android:layout_height="@dimen/px_40"
+                   android:background="@drawable/aricheditoe_img"/>
+
+               <ImageView
+                   android:id="@+id/iv_emoji_publishactivity"
+                   android:layout_marginLeft="@dimen/px_25"
+                   android:layout_width="@dimen/px_50"
+                   android:layout_gravity="center"
+                   android:visibility="gone"
+                   android:layout_height="@dimen/px_50"
+                   android:background="@drawable/icon_face_nomal"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/iv_video_publishactivity"
+                   android:layout_marginLeft="@dimen/px_25"
+                   android:layout_width="@dimen/px_40"
+                   android:layout_height="@dimen/px_40"
+                   android:background="@drawable/aricheditoe_video"/>
+           </LinearLayout>
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:layout_marginTop="@dimen/px_2"
+               android:background="@color/btnTextColor"
+               android:layout_height="@dimen/px_136">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:text="商品封面："
+                   android:paddingLeft="@dimen/px_18"
+                   android:paddingRight="@dimen/px_18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/px_text_28"
+                   android:textColor="@color/principalTitleTextColor" />
+
+               <android.support.v7.widget.ContentFrameLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <android.support.v7.widget.AppCompatImageView
+                       android:id="@+id/iv_show_publishgoods"
+                       android:layout_marginTop="@dimen/px_18"
+                       android:layout_width="@dimen/px_130"
+                       android:layout_height="@dimen/px_100"
+                       android:clickable="true"
+                       android:scaleType="fitXY"
+                       android:background="@drawable/add" />
+                   <android.support.v7.widget.AppCompatImageView
+                       android:id="@+id/iv_delete_publishgoods"
+                       android:clickable="true"
+                       android:visibility="invisible"
+                       android:layout_marginLeft="@dimen/px_116"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_delete" />
+               </android.support.v7.widget.ContentFrameLayout>
+
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <android.support.v7.widget.AppCompatButton
+               android:id="@+id/btn_post_publishgoods"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/px_18"
+               android:layout_marginRight="@dimen/px_18"
+               android:layout_marginTop="@dimen/px_36"
+               android:layout_marginBottom="@dimen/px_30"
+               android:background="@drawable/zy_frame_btn"
+               android:text="确 认 发 布"
+               android:textColor="@color/whiteBgColor"
+               android:textSize="@dimen/px_text_35" />
+
+       </android.support.v7.widget.LinearLayoutCompat>
+   </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

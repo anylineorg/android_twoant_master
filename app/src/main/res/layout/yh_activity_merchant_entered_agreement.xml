@@ -1,0 +1,31 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="net.twoant.master.ui.main.activity.PushInfoDetailActivity">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_32"
+        tools:text="标题" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_26"
+        tools:text="内容" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

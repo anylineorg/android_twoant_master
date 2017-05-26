@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/mediumGreyColor"
+    android:radius="@dimen/px_10">
+
+    <item>
+        <selector>
+
+            <item
+                android:drawable="@drawable/yh_ic_back_circle_black"
+                android:state_pressed="false" />
+
+            <item
+                android:drawable="@drawable/yh_ic_back_circle_grey"
+                android:state_pressed="true" />
+
+        </selector>
+    </item>
+</ripple>

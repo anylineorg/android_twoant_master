@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_30"
+            android:textStyle="bold"
+            tools:text="标题" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_merchant_name"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_action_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginStart="@dimen/px_10"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/px_20"
+                android:paddingTop="@dimen/px_20"
+                android:textColor="@color/currentSelectColor"
+                android:textSize="@dimen/px_text_26"
+                tools:text="@string/action_collection" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_20"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:weightSum="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/action_release_time"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_action_release_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginStart="@dimen/px_10"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="@string/action_release_time" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_action_read_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginStart="@dimen/px_10"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="@string/action_reader" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_address"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_action_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginStart="@dimen/px_10"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="@string/action_address" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_continue_time"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_action_continue_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginStart="@dimen/px_10"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="@string/action_continue_time" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_apply_count"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_action_apply_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginStart="@dimen/px_10"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="@string/action_apply_count" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_cost"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_action_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginStart="@dimen/px_10"
+            android:textColor="@color/currentSelectColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="@string/action_cost" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</merge>

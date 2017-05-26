@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/px_30"
+    android:paddingBottom="@dimen/px_30"
+    android:background="@color/btnTextColor"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bb"
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_toRightOf="@id/aa"
+        android:layout_width="@dimen/px_60"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ing_integral"
+            android:src="@drawable/ic_def_circle_orange"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/bb"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_money_integral"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_34"
+                android:layout_marginRight="@dimen/px_10"
+                android:textColor="@color/navigationTextColor"
+                tool:text="+500"/>
+            <TextView
+                android:id="@+id/tv_name_integral"
+                android:layout_toLeftOf="@id/tv_money_integral"
+                android:layout_marginTop="@dimen/px_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_28"
+                android:textColor="@color/principalTitleTextColor"
+                tool:text="黄岛一日游"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detail_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tool:text="活动支付500元获得积分"/>
+
+        <TextView
+            android:id="@+id/tv_explain_integral"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_1"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tool:text="说明"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aa"
+        android:layout_width="@dimen/px_140"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_time_integral"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_28"
+            android:textColor="@color/subordinationContentTextColor"
+            tool:text="16.12.01 17:00:16"/>
+    </LinearLayout>
+
+</RelativeLayout>

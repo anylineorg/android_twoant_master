@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="122dp"
+            android:background="@drawable/invite"
+            android:gravity="center"
+            android:layout_gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView19"
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/px_text_28"
+                android:textColor="@color/btnTextColor"
+                android:text="填写了邀请人的用户在实名认证之后，邀请人与被邀请人都将获得1000积分的奖励"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

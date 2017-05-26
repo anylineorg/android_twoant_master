@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_clean_record"
+        android:layout_width="match_parent"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/Empty_the_chat_record"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:typeface="normal" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_shield_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingTop="@dimen/px_20"
+            android:text="@string/Shielding_of_the_message"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_shield_group_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:button="@drawable/yh_check_box_switch_green"
+            android:clickable="false" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_search_message"
+        android:layout_width="match_parent"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/serach_group_message"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:typeface="normal" />
+</android.support.v7.widget.LinearLayoutCompat>

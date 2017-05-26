@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_error_hint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/px_100"
+        android:minWidth="@dimen/px_100"
+        android:src="@drawable/ic_error_outline" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_hint_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_10"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        tools:text="网络连接失败" />
+
+</android.support.v7.widget.LinearLayoutCompat>

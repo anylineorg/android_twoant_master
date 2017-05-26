@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackgroundColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_10"
+        android:paddingTop="@dimen/px_10"
+        app:counterOverflowTextAppearance="@style/TextInputLayoutCounterOverflow"
+        app:counterTextAppearance="@style/TextInputLayoutCounter"
+        app:errorTextAppearance="@style/TextInputLayoutError"
+        app:hintTextAppearance="@style/TextInputLayoutHint">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edit_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/info_find_friend"
+            android:inputType="number"
+            android:imeActionId="@+id/search"
+            android:imeActionLabel="@string/main_page_search"
+            android:imeOptions="actionGo"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub_info_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/yh_chat_find_friend" />
+
+</android.support.v7.widget.LinearLayoutCompat>

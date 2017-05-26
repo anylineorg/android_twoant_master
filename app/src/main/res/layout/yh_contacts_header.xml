@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_160"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:id="@+id/rl_new_friend"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px_160"
+        android:layout_weight="1"
+        android:background="@drawable/yh_white_grey_bg_btn_press"
+        android:clickable="true">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_new_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:src="@drawable/em_new_friends_icon" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:gravity="center"
+                android:text="@string/category_new_friend"
+                android:textSize="@dimen/px_text_24" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/hint_new_friend"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_toEndOf="@id/ll_new_friend"
+            android:layout_toRightOf="@id/ll_new_friend"
+            android:background="@drawable/ease_unread_dot"
+            android:padding="@dimen/px_10"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px_160"
+        android:layout_weight="1"
+        android:background="@drawable/yh_white_grey_bg_btn_press"
+        android:clickable="true">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/cfl_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:src="@drawable/em_groups_icon" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:gravity="center"
+                android:text="@string/category_new_group"
+                android:textSize="@dimen/px_text_24" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/hint_group"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_toEndOf="@id/cfl_group"
+            android:layout_toRightOf="@id/cfl_group"
+            android:background="@drawable/ease_unread_dot"
+            android:padding="@dimen/px_10"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_group"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px_160"
+        android:layout_weight="1"
+        android:background="@drawable/yh_white_grey_bg_btn_press"
+        android:clickable="true">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/cfl_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:src="@drawable/em_add_public_group" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:gravity="center"
+                android:text="@string/category_new_addition"
+                android:textSize="@dimen/px_text_24" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/hint_add"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_toEndOf="@id/cfl_add"
+            android:layout_toRightOf="@id/cfl_add"
+            android:background="@drawable/ease_unread_dot"
+            android:padding="@dimen/px_10"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

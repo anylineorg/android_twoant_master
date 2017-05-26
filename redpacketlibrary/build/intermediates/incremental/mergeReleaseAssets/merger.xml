@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\develop\android\workspace\android_twoant_master\redpacketlibrary\src\main\assets"/><source path="D:\develop\android\workspace\android_twoant_master\redpacketlibrary\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\develop\android\workspace\android_twoant_master\redpacketlibrary\src\release\assets"/></dataSet></merger>

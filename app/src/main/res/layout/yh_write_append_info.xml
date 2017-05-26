@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:text="@string/info_verify"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_24" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        app:counterMaxLength="300"
+        android:layout_marginBottom="@dimen/px_20"
+        app:counterEnabled="true"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:textColor="@color/principalTitleTextColor"
+            android:maxLength="300"
+            android:minHeight="@dimen/px_150"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/px_2"
+            android:layout_marginRight="@dimen/px_2"
+            android:layout_weight="1"
+            android:background="@drawable/yh_btn_press_grey"
+            android:text="@string/cancel"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_2"
+            android:layout_marginStart="@dimen/px_2"
+            android:layout_weight="1"
+            android:background="@drawable/yh_btn_press_orange"
+            android:text="@string/button_send"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

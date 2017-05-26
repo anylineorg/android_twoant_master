@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RecyclerViewItemStyle"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_16"
+    android:paddingLeft="@dimen/px_20"
+    android:id="@+id/merchant_root"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_16"
+    android:weightSum="1">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_merchant_img"
+        android:layout_width="wrap_content"
+        tools:src="@drawable/ic_def_small"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/shop_staue"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_name_merchant_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/entered_merchant_text"
+                android:textSize="@dimen/px_text_28"
+                tools:text="武大郎烧饼" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_distance_merchant_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_10"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_22"
+                tools:text="100M" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_phone_number_merchant_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="电话:1333333" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_deal_volume_merchant_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="@string/action_deal_volume" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_comment_count_merchant_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginStart="@dimen/px_10"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="电话:1333333" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_address_merchant_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="电话:1333333" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

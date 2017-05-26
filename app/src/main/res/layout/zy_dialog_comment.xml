@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/whiteGreyColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <net.twoant.master.widget.BackEditText
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+        android:layout_marginBottom="@dimen/px_8"
+        android:layout_width="match_parent"
+        android:padding="@dimen/px_10"
+        android:background="@drawable/zy_fix_phone"
+        android:hint="评论内容"
+        android:gravity="left"
+        android:layout_height="@dimen/px_180"
+        android:id="@+id/editText"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_emoji_publishdynamic"
+            android:layout_marginLeft="@dimen/px_25"
+            android:layout_width="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/px_50"
+            android:background="@drawable/icon_face_nomal"/>
+        <TextView
+            android:id="@+id/tv_comment"
+            android:textSize="@dimen/px_text_30"
+            android:text="发表"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:paddingTop="@dimen/px_14"
+            android:paddingBottom="@dimen/px_10"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_11"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/background_white"
+            android:background="@drawable/zy_post_comment_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <include android:id="@+id/fragment_emoji" android:visibility="gone" layout="@layout/fragment_face" />
+
+
+</LinearLayout>

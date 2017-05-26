@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scolloview_activityitem"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+    <!--活动类别详情-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundColor"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/btnTextColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/gray_arrow" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收费活动费用"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_36"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contain_activityitem"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_height="@dimen/px_100"
+                android:layout_marginTop="@dimen/px_12"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:padding="@dimen/px_12">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_32"
+                    android:textColor="@color/subordinationContentTextColor"
+                    android:text="费用名称:"/>
+                <EditText
+                    android:id="@+id/et_activityname_activityitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_90"
+                    android:textSize="@dimen/px_text_30"
+                    android:hint="请输入费用名称"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="@dimen/px_100"
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:padding="@dimen/px_12">
+
+                <TextView
+                    android:id="@+id/tv_fee_activityitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_32"
+                    android:textColor="@color/subordinationContentTextColor"
+                    android:text="活动费用:" />
+                <EditText
+                    android:id="@+id/et_free_activityitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_90"
+                    android:inputType="numberDecimal|number"
+                    android:textSize="@dimen/px_text_30"
+                    android:hint="请输入金额"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_secondcontain_activityitem"
+                android:weightSum="20"
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:padding="@dimen/px_12"
+                android:layout_height="@dimen/px_100">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_secondfee_acitivityitem"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_text_32"
+                        android:textColor="@color/subordinationContentTextColor"
+                        android:text="积分数额:"/>
+                    <EditText
+                        android:id="@+id/et_second_publishactivity"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_height="@dimen/px_90"
+                        android:textSize="@dimen/px_text_30"
+                        android:hint="不填默认为0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_second2_activityitem"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="@dimen/px_text_32"
+                        android:textColor="@color/subordinationContentTextColor"
+                        android:text="可抵扣:"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/et_second2_activityitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px_90"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="@dimen/px_text_30"
+                        android:hint="不填默认0"/>
+                    <TextView
+                        android:textColor="@color/subordinationContentTextColor"
+                        android:textSize="@dimen/px_text_32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:padding="@dimen/px_12"
+                android:layout_height="@dimen/px_100">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_32"
+                    android:textColor="@color/subordinationContentTextColor"
+                    android:text="名额限制:"/>
+                <EditText
+                    android:id="@+id/et_people_activityitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_90"
+                    android:textSize="@dimen/px_text_30"
+                    android:inputType="number"
+                    android:hint="默认为0无限制"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_addactivity_item"
+            android:padding="@dimen/px_20"
+            android:text="+添加费用项"
+            android:textColor="@color/title_color"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/px_text_30"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginBottom="@dimen/px_40"
+            android:id="@+id/btn_finish_publishdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_18"
+            android:layout_marginRight="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_10"
+            android:background="@drawable/zy_frame_btn"
+            android:text="完   成"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="@dimen/px_text_35" />
+    </LinearLayout>
+
+</ScrollView>

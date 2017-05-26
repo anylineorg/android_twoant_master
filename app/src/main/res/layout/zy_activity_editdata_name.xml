@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/btnTextColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/tv_save"
+            android:enabled="false"
+            android:layout_width="@dimen/px_120"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerInParent="true"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_18"
+            android:textColor="@color/projectionColor"
+            android:background="@color/merchantHintTextColor"
+            android:textSize="@dimen/px_text_32" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更改名字"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_70">
+        <EditText
+            android:id="@+id/et_name_editdata"
+            android:paddingLeft="@dimen/px_10"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            tool:text="邓志颖"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textSize="@dimen/px_text_36"
+            android:background="@drawable/zy_undiner_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_marginLeft="@dimen/px_20"
+        android:padding="@dimen/px_10"
+        android:textColor="@color/subordinationContentTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_text_26"
+        android:text="好名字可以让你的朋友更容易记住你"/>
+
+
+</LinearLayout>

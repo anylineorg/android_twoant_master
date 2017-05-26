@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/report_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context="net.twoant.master.net.twoant.master.ui.main.activity.ReportStatementActivity">
+
+        <include layout="@layout/yh_simple_scroll_tool_bar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteBgColor"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <ViewStub
+            android:id="@+id/view_stub_report_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            android:layout="@layout/yh_stub_report_bottom_sheet" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub_report_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/yh_stub_report_other" />
+
+    <ViewStub
+        android:id="@+id/view_stub_report_saved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/yh_stub_report_saved" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

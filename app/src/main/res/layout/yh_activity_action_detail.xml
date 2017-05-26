@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        tools:context="net.twoant.master.net.twoant.master.ui.main.activity.ActionDetailActivity">
+
+        <include layout="@layout/yh_simple_address_scroll_tool_bar"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:divider="@drawable/yh_divider_line"
+                app:showDividers="middle">
+
+                <include layout="@layout/yh_include_banner_view" />
+
+                <include layout="@layout/yh_include_action_detail_header" />
+
+                <include
+                    layout="@layout/yh_item_activity_detail" />
+
+                <include layout="@layout/yh_view_divider_item" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_action_applied"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px_20"
+                    android:text="@string/action_applied"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_enrolled_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--买家-->
+    <ViewStub
+        android:id="@+id/view_stub_purchaser_action_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/yh_stub_purchaser_action_detail" />
+
+    <!--商家-->
+    <ViewStub
+        android:id="@+id/view_stub_merchant_action_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/yh_stub_merchant_action_detail" />
+
+</android.support.v7.widget.LinearLayoutCompat>

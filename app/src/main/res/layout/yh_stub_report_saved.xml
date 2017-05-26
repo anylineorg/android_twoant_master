@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sum_people"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteBgColor"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/px_16"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sum_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteBgColor"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/px_16"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_used"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteBgColor"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/px_16"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_unused"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteBgColor"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/px_16"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+</android.support.v7.widget.LinearLayoutCompat>

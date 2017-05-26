@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/btnTextColor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/px_16"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_120">
+        <ImageView
+            android:id="@+id/iv_item_activitylist"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_width="@dimen/px_180"
+            android:layout_height="@dimen/px_90" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/px_16"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_name_activitylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_32"
+                android:textColor="@color/principalTitleTextColor"
+                tool:text="蛋糕特价品尝会"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_28"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:text="已参加:"/>
+                <TextView
+                    android:id="@+id/tv_people_activitylist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_28"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    tool:text="19人"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@color/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"/>
+
+    <LinearLayout
+        android:padding="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_24"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:text="活动时间:"/>
+        <TextView
+            android:id="@+id/tv_time_activitylist"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_24"
+            android:textColor="@color/subordinationTitleTextColor"
+            tool:text="2016-12-13至2016-12-20"/>
+    </LinearLayout>
+
+</LinearLayout>

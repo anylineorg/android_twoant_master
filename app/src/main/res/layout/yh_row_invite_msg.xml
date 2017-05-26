@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_invitation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_chat_list_item_bg"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_header_avatar"
+        android:layout_width="@dimen/px_100"
+        android:clickable="false"
+        android:layout_height="@dimen/px_100"
+        tools:src="@drawable/em_default_avatar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px_12"
+        android:paddingRight="@dimen/px_12"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/px_5"
+            android:paddingTop="@dimen/px_5"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="昵称" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/px_5"
+            android:layout_marginTop="@dimen/px_5"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="时间：20162012122" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="时间：2016201212" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            android:visibility="gone"
+            tools:text="群聊" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_msg_state"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/em_msg_state_fail_resend"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLength="300"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="昵称" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_behaviour"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5"
+            android:background="@drawable/yh_btn_press_orange"
+            android:text="@string/agree"
+            android:textColor="@color/whiteTextColor" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_disagree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5"
+            android:background="@drawable/yh_gray_press"
+            android:text="@string/refuse"
+            android:textColor="@color/principalTitleTextColor" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

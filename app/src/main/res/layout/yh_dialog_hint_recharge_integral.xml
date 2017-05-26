@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_dialog_bg_top_circle"
+    android:minWidth="@dimen/px_400"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/px_20"
+        android:text="@string/action_integral_dialog_balance_not_enough"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@drawable/yh_bg_color_primary" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:drawableLeft="@drawable/ic_hint_integral"
+            android:drawablePadding="@dimen/px_20"
+            android:drawableStart="@drawable/ic_hint_integral"
+            android:text="@string/action_integral_dialog_balance"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_integral_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:layout_toEndOf="@id/tv_balance"
+            android:layout_toRightOf="@id/tv_balance"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="1000" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_balance"
+            android:layout_toEndOf="@id/tv_integral_balance"
+            android:layout_toRightOf="@id/tv_integral_balance"
+            android:text="@string/action_integral_dialog_integral"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_24" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/tv_balance"
+            android:layout_alignRight="@id/tv_balance"
+            android:layout_below="@id/tv_balance"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="@string/action_integral_dialog_lack"
+            android:textColor="@color/IntegralDialogTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_lack_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_recharge"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:layout_toEndOf="@id/tv_recharge"
+            android:layout_toRightOf="@id/tv_recharge"
+            android:textColor="@color/IntegralDialogTextColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="1000" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_recharge"
+            android:layout_toEndOf="@id/tv_lack_integral"
+            android:layout_toRightOf="@id/tv_lack_integral"
+            android:text="@string/action_integral_dialog_integral"
+            android:textColor="@color/IntegralDialogTextColor"
+            android:textSize="@dimen/px_text_24" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@color/mediumGreyColor" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:text="@string/action_integral_dialog_know"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <View
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:background="@color/mediumGreyColor" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_recharge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:text="@string/action_integral_dialog_recharge"
+            android:textColor="@color/currentSelectColor"
+            android:textSize="@dimen/px_text_28" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

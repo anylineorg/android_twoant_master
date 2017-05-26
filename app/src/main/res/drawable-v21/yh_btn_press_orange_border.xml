@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/lightGreyColor"
+    android:radius="@dimen/px_10">
+    <item>
+        <selector>
+
+            <item android:state_enabled="false">
+                <shape>
+                    <corners android:radius="2dp" />
+                    <solid android:color="@color/whiteBgColor" />
+                    <stroke
+                        android:width="@dimen/px_2"
+                        android:color="@color/colorPrimary" />
+                </shape>
+
+            </item>
+            <item android:state_pressed="true">
+                <shape>
+                    <corners android:radius="2dp" />
+                    <solid android:color="@color/whiteBgColor" />
+                    <stroke
+                        android:width="@dimen/px_2"
+                        android:color="@color/colorPrimary" />
+                </shape>
+            </item>
+
+            <item android:state_pressed="false">
+                <shape>
+                    <solid android:color="@color/whiteBgColor" />
+                    <corners android:radius="2dp" />
+                    <stroke
+                        android:width="@dimen/px_2"
+                        android:color="@color/colorPrimary" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

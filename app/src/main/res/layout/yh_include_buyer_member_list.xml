@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_buyer_swipe_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_btn_press_transparent_grey"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:padding="@dimen/px_20"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="@dimen/px_90"
+        android:src="@drawable/ic_def_circle" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="昵称" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_vip_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_10"
+            android:lines="1"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="优惠：85折" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_vip_gold_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_10"
+            android:lines="1"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_22"
+            tools:text="金币：1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_vip_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:lines="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_20"
+            tools:text="Vip1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_push_state"
+            android:layout_width="@dimen/px_25"
+            android:layout_height="@dimen/px_25"
+            android:layout_centerInParent="true"
+            android:background="@drawable/yh_bg_push_state"
+            android:clickable="true"
+            android:enabled="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

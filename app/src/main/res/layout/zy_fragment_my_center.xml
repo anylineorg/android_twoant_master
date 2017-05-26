@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tool="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_white"
+            android:scrollbars="none">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:divider="@drawable/yh_divider_line_2px"
+        app:dividerPadding="@dimen/px_20"
+        app:showDividers="middle">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_xinxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBgColor"
+            android:padding="@dimen/px_20"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_photo_center"
+                android:layout_width="@dimen/px_90"
+                android:layout_height="@dimen/px_90"
+                tool:src="@drawable/shezhitouxiang"/>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginStart="@dimen/px_20"
+                android:gravity="center_vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26"
+                    tool:text="鱼丸"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tool:text="@string/my_center_AiSoID"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/px_text_24"/>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_sign_mycenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tool:text="@string/my_center_signature"
+                        android:textColor="@color/subordinationTitleTextColor"
+                        android:textSize="@dimen/px_text_24"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:maxLines="2"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_editdata_center"
+                android:layout_width="@dimen/px_60"
+                android:layout_height="match_parent"
+                android:src="@drawable/qianbi_bianji"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/px_10"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_everyday_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:visibility="gone"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/aa"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/icon_ererydayword"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_daily_task"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_shoucang_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView38"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/icon_mycollect"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_mycollect"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_my_convenient_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView100"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/ic_info"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_myconveniet"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_dynamic_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView48"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/my_ico_4"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_dynamic"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_attestation_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView36"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/my_ico_6"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_realname_authentication"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_seller_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView35"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/count_info"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_account_information"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_my_member_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView39"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/icon_instruction" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_text_28"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:text="@string/my_center_member_merchant" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/huise_xiaojiantou" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_myseller_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView34"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:src="@drawable/my_ico_8"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_connect_us"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_supermanager_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView351"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/icon_chao_ji"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_supermanager"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_settring_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:visibility="visible">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView33"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/icon_set"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_setting"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_clean_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView42"
+                android:layout_width="@dimen/px_45"
+                android:layout_height="@dimen/px_45"
+
+                android:src="@drawable/icon_set"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_clean_cache"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/rl_getout_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yh_btn_press_transparent_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView41"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/icon_goout"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="@dimen/px_20"
+                android:text="@string/my_center_getout"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+
+                android:src="@drawable/huise_xiaojiantou"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBgColor"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteBgColor"
+                android:padding="@dimen/px_10"
+                android:text="@string/my_center_sweepcode_link"
+                android:textSize="@dimen/px_text_28"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_dynamic"
+                android:layout_width="@dimen/px_400"
+                android:layout_height="@dimen/px_400"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_app_code"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_version_mycenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_30"
+                android:gravity="center_horizontal"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_30"
+                tool:text="版本号：50"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+        <!--占剩余屏幕的大小-->
+        <!--<LinearLayout
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/whiteBgColor"
+            android:layout_height="match_parent">
+            <TextView
+                android:padding="@dimen/px_10"
+                android:textSize="@dimen/px_text_28"
+                android:background="@color/whiteBgColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App下载扫码链接"/>
+            <LinearLayout
+                android:paddingLeft="@dimen/px_100"
+                android:paddingRight="@dimen/px_100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/icon_app_code"/>
+            </LinearLayout>
+
+        </LinearLayout>-->
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</ScrollView>

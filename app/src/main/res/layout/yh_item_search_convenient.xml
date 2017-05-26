@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_btn_press_transparent_grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:paddingTop="@dimen/px_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_convenient_info_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            android:textStyle="bold"
+            tools:text="的咖啡哈科技gals肌肤咖喱近代商法上了解到拉山口哈洛加斯拉萨jfk是个" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_convenient_info_pub_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_20"
+            tools:text="个人发布" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:weightSum="3">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_convenient_info_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:lines="1"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_20"
+            tools:text="2017-11-11 11：30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_convenient_info_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_20"
+            tools:text="阅览:9000次" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_convenient_info_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            android:textColor="@color/subordinationContentTextColor"
+            android:textSize="@dimen/px_text_20"
+            tools:text="ID:13666666" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_convenient_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.5"
+        android:maxLines="6"
+        android:paddingBottom="@dimen/px_5"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:paddingTop="@dimen/px_10"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_24"
+        tools:text="的拉哈拉哈 武器有人去屋怄气王瑞琪哦群殴若区容器柔情我哦亲微弱IQ无融券微弱秋容起舞容我入群我去热情哦我如群殴我拉斯杀了开发和ia'l'h'fi'la's'j撒dhl看良好的撒卡嘎手机发噶啦基地啊是符合" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        app:divider="@drawable/yh_divider_line"
+        app:showDividers="middle">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_info1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_300"
+            android:layout_marginEnd="@dimen/px_5"
+            android:layout_marginRight="@dimen/px_5"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_def_large"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_info2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_300"
+            android:layout_marginEnd="@dimen/px_5"
+            android:layout_marginRight="@dimen/px_5"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_def_large"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_info3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_300"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_def_large"
+            android:visibility="gone" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

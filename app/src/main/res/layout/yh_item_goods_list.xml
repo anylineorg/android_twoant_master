@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RecyclerViewItemStyle"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/px_20"
+    android:weightSum="1"
+    android:paddingRight="@dimen/px_20">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_goods_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_16"
+        android:layout_marginLeft="@dimen/px_14"
+        android:layout_marginStart="@dimen/px_14"
+        android:layout_marginTop="@dimen/px_16"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/entered_merchant_text"
+                android:textSize="@dimen/px_text_28"
+                tools:text="烧饼" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_distance_goods_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_marginStart="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_10"
+                android:maxLines="1"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="300M" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_merchant_name_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_12"
+            android:layout_marginTop="@dimen/px_12"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="武大郎直营店" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_introduce_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="好吃不贵" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_12">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_money"
+                android:textColor="@color/currentSelectColor"
+                android:textSize="@dimen/px_text_24" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_price_goods_list"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/currentSelectColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="12" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_goods_count"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/currentSelectColor"
+                android:textSize="@dimen/px_text_32"
+                tools:text="12" />
+            <!--加减号-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/jia_jian_layout"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/iv_minus_goodsdetail"
+                    android:src="@drawable/icon_goodsdetail_reduce"
+                    android:layout_marginLeft="@dimen/px_text_18"
+                    android:layout_marginRight="1dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:gravity="center_horizontal"
+                    android:visibility="invisible"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginBottom="@dimen/px_4"
+                    android:layout_width="@dimen/px_60"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/tv_number_goodsdetail"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/iv_addd_goodsdetail"
+                    android:src="@drawable/icon_goodsdetail_plus"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+
+
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_reader"
+                android:visibility="gone"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_read_count_goods_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textColor="@color/currentSelectColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="900" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_time"
+                android:visibility="gone"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <!--兑换按钮-->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/exchange_bt"
+        android:src="@drawable/exchange"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/px_text_18"
+        android:layout_marginRight="5dp" />
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tv_item_photo_convenientcomment"
+            android:layout_marginTop="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_width="@dimen/px_80"
+            android:layout_height="@dimen/px_80"
+            android:src="@drawable/icon_integral"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_item_name_convenientcomment"
+               android:layout_marginTop="@dimen/px_18"
+               android:textColor="@color/check_blue"
+               android:textSize="@dimen/px_text_30"
+               android:text="Co521"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/tv_item_content_convenientcomment"
+           android:layout_marginTop="@dimen/px_8"
+           android:layout_marginRight="@dimen/px_20"
+           android:layout_width="match_parent"
+           android:lineSpacingExtra="@dimen/px_2"
+           android:textColor="@color/text_black"
+           android:text="阿斯顿撒旦是打飞机凯撒的回复就开始加法卡死代理费开始的开发奥斯卡的发货快圣诞节发空间上大富科技杀得快解放和贷款时就按凤凰科技控到死放开手好看积分山东矿机萨达科技返回时刻的划分空间啥都会看见谁看见对方哈斯科技的发挥"
+           android:layout_height="wrap_content" />
+
+       <RelativeLayout
+           android:layout_marginTop="@dimen/px_4"
+           android:layout_marginBottom="@dimen/px_4"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_item_time_convenient"
+               android:textColor="@color/divider_color"
+               android:textSize="@dimen/px_text_28"
+               android:text="12:54:51"
+               android:layout_marginBottom="@dimen/px_10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_toRightOf="@id/tv_item_time_convenient"
+               android:textColor="@color/divider_color"
+               android:textSize="@dimen/px_text_28"
+               android:text="回复"
+               android:visibility="gone"
+               android:layout_marginLeft="@dimen/px_6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_alignParentRight="true"
+               android:textColor="@color/check_blue"
+               android:textSize="@dimen/px_text_28"
+               android:text="删除"
+               android:visibility="gone"
+               android:layout_marginRight="@dimen/px_36"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

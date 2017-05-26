@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteBgColor"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/px_16"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+    <RelativeLayout
+        android:id="@+id/rl_used"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/yh_white_grey_bg_btn_press"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/yh_white_grey_bg_btn_press"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px_16"
+            android:paddingTop="@dimen/px_16"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_used"
+            android:layout_width="@dimen/px_40"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_used"
+            android:layout_toEndOf="@id/tv_used"
+            android:layout_toRightOf="@id/tv_used"
+            android:src="@drawable/ic_action_draw_top" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_unused"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/yh_white_grey_bg_btn_press"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_unused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px_16"
+            android:paddingTop="@dimen/px_16"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_unused"
+            android:layout_width="@dimen/px_40"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_unused"
+            android:layout_toEndOf="@id/tv_unused"
+            android:layout_toRightOf="@id/tv_unused"
+            android:src="@drawable/ic_action_draw_top" />
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

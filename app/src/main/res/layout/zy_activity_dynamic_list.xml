@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="net.twoant.master.ui.main.activity.MerchantListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AiSouAppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_simple_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@drawable/ic_action_back"
+            app:popupTheme="@style/AiSouAppTheme.PopupOverlay"
+            app:title="@string/empty_string">
+
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/zy_progressbar_toolbar"
+                android:layout_width="@dimen/px_30"
+                android:layout_height="@dimen/px_30" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_tool_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_15"
+                android:text="@string/app_name"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="@dimen/px_text_32"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_back_top"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_80"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/px_48"
+        android:layout_marginEnd="@dimen/px_32"
+        android:layout_marginRight="@dimen/px_32"
+        android:background="@android:color/transparent"
+        android:src="@drawable/yh_scroll_top_bg"
+        app:layout_behavior="@string/floating_button_behavior" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh_merchant_list"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteBgColor" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>

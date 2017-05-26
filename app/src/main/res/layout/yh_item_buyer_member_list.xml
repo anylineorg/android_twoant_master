@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.twoant.master.widget.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/yh_include_buyer_member_list" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_close_push"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/yh_btn_press_orange"
+        android:gravity="center"
+        android:text="@string/member_push"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+
+</net.twoant.master.widget.SwipeMenuLayout>

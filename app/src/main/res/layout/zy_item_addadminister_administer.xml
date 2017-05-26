@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteBgColor"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_admin_header_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_admin_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/principalTitleTextColor"
+        tools:text="一叶知秋" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_item_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff6733"
+        android:clickable="true"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:text="添加"
+        android:textColor="@color/whiteTextColor" />
+</android.support.v7.widget.LinearLayoutCompat>

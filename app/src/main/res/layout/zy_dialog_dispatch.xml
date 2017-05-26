@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteBgColor">
+
+    <TextView
+        android:layout_marginTop="@dimen/px_26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="配送方式"
+        android:textStyle="bold"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_36"
+        android:id="@+id/textView2" />
+
+    <View
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:layout_marginBottom="@dimen/px_20"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group_dispatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_30">
+
+        <RadioButton
+            android:id="@+id/rb_store_consume"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingRight="@dimen/px_50"
+            android:text="店内消费"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+         />
+
+        <View
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_store_dispatch"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingRight="@dimen/px_50"
+            android:text="商家配送"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+        <View
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_platform_dispatch"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingRight="@dimen/px_50"
+            android:text="平台配送"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+        <View
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_selfe_dispatch"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingRight="@dimen/px_50"
+            android:text="买家自取"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

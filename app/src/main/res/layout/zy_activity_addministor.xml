@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreyColor"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.ContentFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back_admin_page"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="start"
+            android:background="@drawable/yh_white_transparent_bg_btn_press"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="管理员"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_add_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="添加"
+            android:background="@drawable/yh_white_transparent_bg_btn_press"
+            android:textColor="@color/navigationTextColor"
+            android:textSize="18sp" />
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <ListView
+        android:id="@+id/lv_manager_list"
+        android:layout_marginTop="@dimen/px_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGreyColor"
+        android:divider="@color/lightGreyColor"
+        android:dividerHeight="@dimen/px_8" />
+
+</android.support.v7.widget.LinearLayoutCompat>

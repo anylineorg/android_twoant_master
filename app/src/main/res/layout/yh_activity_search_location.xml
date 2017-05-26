@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.twoant.master.ui.my_center.activity.SearchLocationActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatImageButton
+           android:id="@+id/btn_close"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="match_parent"
+            android:background="@drawable/yh_press_transparent_dark_orange"
+            android:src="@drawable/ic_action_back" />
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@drawable/em_search_bar_icon_normal"
+            android:drawablePadding="@dimen/px_5"
+            android:drawableStart="@drawable/em_search_bar_icon_normal"
+            android:hint="@string/search_place"
+            android:textColorHint="#AAFFFFFF"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_search"
+            android:clickable="true"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="match_parent"
+            android:background="@drawable/yh_press_transparent_dark_orange"
+            android:gravity="center"
+            android:text="@string/search_text"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.v7.widget.LinearLayoutCompat>

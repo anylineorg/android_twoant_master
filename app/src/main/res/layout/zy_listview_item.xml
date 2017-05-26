@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/contacts_items"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgHead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            tool:src="@drawable/shezhitouxiang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Tom"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/px_text_34" />
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0.2dip"
+                    android:layout_marginTop="0dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="13:32"
+                    android:textColor="#ffcccccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/principalTitleTextColor"
+                android:text="Hello world"
+                android:textSize="@dimen/px_text_30" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                <net.twoant.master.widget.MyGridView
+                    android:id="@+id/item_gv"
+                    android:numColumns="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </net.twoant.master.widget.MyGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                <ImageView
+                    android:id="@+id/ivAgreeShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingLeft="2dp"
+                    android:src="@drawable/qzone_picviewer_bottom_praise_icon" />
+                <TextView
+                    android:id="@+id/item_zan_count_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ivAgreeShow"
+                    android:text="人觉得很赞!"
+                    android:paddingLeft="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/item_ll_comment_dynamic"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="评论"
+                        android:textSize="@dimen/px_text_24" />
+                    <ImageView
+                        android:id="@+id/ivComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tvComment"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/px_12"
+                        android:paddingLeft="@dimen/px_6"
+                        android:src="@drawable/qzone_picviewer_bottom_comment_icon" >
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_zan_dynamic"
+                    android:layout_toLeftOf="@id/item_ll_comment_dynamic"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvAgree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赞"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/px_text_24" />
+                    <ImageView
+                        android:id="@+id/ivAgree"
+                        android:layout_marginLeft="@dimen/px_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:src="@drawable/qzone_picviewer_bottom_unpraise_icon" >
+                    </ImageView>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_delete_dynamic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_item_delete_convenivent"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/check_blue"
+                    android:textSize="@dimen/px_text_28"
+                    android:text="删除"
+                    android:layout_marginRight="@dimen/px_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <net.twoant.master.widget.NoScrollListview
+                    android:id="@+id/item_comment_list"
+                    android:numColumns="1"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </net.twoant.master.widget.NoScrollListview>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

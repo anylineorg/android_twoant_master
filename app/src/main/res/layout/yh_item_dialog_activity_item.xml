@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:weightSum="1">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_16"
+        android:layout_marginEnd="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_10"
+        android:layout_marginTop="@dimen/px_16"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="项目名称" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_26"
+            android:gravity="bottom"
+            tools:text="10次" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_16"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_supplement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="项目名称" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginBottom="@dimen/px_16"
+            android:layout_marginTop="@dimen/px_16"
+            android:textColor="@color/currentSelectColor"
+            android:textSize="@dimen/px_text_26"
+            tools:text="￥200" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:button="@drawable/yh_action_detail_check_box"
+        android:clickable="false" />
+
+</android.support.v7.widget.LinearLayoutCompat>

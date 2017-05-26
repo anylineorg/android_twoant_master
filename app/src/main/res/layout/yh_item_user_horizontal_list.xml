@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_linear_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="@dimen/px_100"
+        android:layout_margin="@dimen/px_10"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_def_circle" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/iv_head_img"
+        android:layout_alignRight="@id/iv_head_img"
+        android:layout_below="@id/iv_head_img"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_22"
+        tools:text="昵称" />
+
+</android.support.v7.widget.LinearLayoutCompat>

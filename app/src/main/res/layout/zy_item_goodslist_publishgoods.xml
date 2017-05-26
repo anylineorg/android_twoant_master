@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/whiteBgColor"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_210">
+
+    <LinearLayout
+        android:padding="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_item_publishgoods"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_10"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shezhitouxiang"
+            android:layout_width="@dimen/px_170"
+            android:layout_height="@dimen/px_160" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="@dimen/px_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_itemstate_publisgoods"
+                    android:layout_marginRight="@dimen/px_14"
+                    android:textSize="@dimen/px_text_28"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已下架"/>
+                <TextView
+                    android:id="@+id/tv_itemname_publishgoods"
+                    android:textSize="@dimen/px_text_32"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@id/tv_itemstate_publisgoods"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="菜篮子800g夹心小胡萝卜"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_ld_goodsdetail_item"
+                android:layout_marginTop="@dimen/px_4"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="好吃好吃很好吃"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/px_4"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_26"
+                    android:text="浏览量:"/>
+                <TextView
+                    android:textColor="@color/navigationTextColor"
+                    android:id="@+id/tv_clickcount_goodsdetail_item"
+                    android:layout_marginTop="@dimen/px_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_26"
+                    tool:text="6222"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/px_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_item_price_publishgoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥16.80"
+                    android:textSize="@dimen/px_text_28"
+                    android:textColor="@color/navigationTextColor"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_item_count_publishgoods"
+                    android:layout_marginRight="@dimen/px_14"
+                    android:textColor="@color/subordinationContentTextColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存：1234"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

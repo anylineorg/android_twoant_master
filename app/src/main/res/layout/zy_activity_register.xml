@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listViewBgColor"
+        android:fillViewport="true">
+
+        <android.support.v7.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/px_20"
+            app:divider="@drawable/yh_divider_line"
+            app:showDividers="middle">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_phone_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginStart="@dimen/px_20"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的手机号"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textColorHint="@color/subordinationContentTextColor"
+                    android:textSize="@dimen/px_text_28" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_code_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入短信验证码"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textColorHint="@color/subordinationContentTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_code_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/px_5"
+                    android:layout_marginTop="@dimen/px_5"
+                    android:background="@drawable/zy_frame_btn"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:text="获取验证码"
+                    android:textColor="@color/whiteBgColor"
+                    android:textSize="@dimen/px_text_28" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_password_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginStart="@dimen/px_20"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textColorHint="@color/subordinationContentTextColor"
+                    android:textSize="@dimen/px_29" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请人"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_inivite_register"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginStart="@dimen/px_20"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入邀请人手机号，没有可不填"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textColorHint="@color/subordinationContentTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_invite_tips_register"
+                    android:layout_width="@dimen/px_62"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/px_10"
+                    android:src="@drawable/mark" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_36"
+                android:background="@drawable/yh_orange_bg_btn_press"
+                android:text="注\t\t册"
+                android:textColor="@color/whiteBgColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_6"
+                    android:text="注册即代表同意 《两只蚂蚁用户协议》"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/px_text_28" />
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:id="@+id/textView18"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/px_18"-->
+                <!--android:layout_marginLeft="@dimen/px_8"-->
+                <!--android:text="《两只蚂蚁用户协议》"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="#999999" />-->
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

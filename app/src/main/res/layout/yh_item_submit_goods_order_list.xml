@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_goods_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_image_btn_press_gray"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_12"
+    android:paddingTop="@dimen/px_12">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_goods_img"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="@dimen/px_81"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_def_large" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="@dimen/px_10"
+            android:layout_marginRight="@dimen/px_10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="商品名称会计分录盛开的分解落实到飞机上看是打飞机圣诞快乐就是打飞机代课老师" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/px_text_24"
+                tools:text="阅览:1000 销量:1000" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_20"
+                tools:text="阅览:1000 销量:1000" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

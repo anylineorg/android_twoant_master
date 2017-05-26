@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/srl_refresh_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/btnTextColor"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#dee0e1">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_adposition"
+                android:layout_width="match_parent"
+                android:background="@color/btnTextColor"
+                android:layout_height="@dimen/px_400">
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/vp_adviewpage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:canLoop="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:background="#dee0e1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"/>
+            <LinearLayout
+                android:background="#dee0e1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/px_1"
+                    android:background="@color/btnTextColor"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/ll_1_charfragment"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_weifukuan"
+                                android:layout_width="@dimen/px_60"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="待付款" />
+                        </LinearLayout>
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/ll_2_charfragment"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:background="@drawable/icon_daishouhuo"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50"/>
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="已付款"
+                                android:id="@+id/textView18" />
+                        </LinearLayout>
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ll_3_charfragment"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_yifahuo"
+                                android:layout_width="@dimen/px_60"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="待发货" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_card_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:background="@drawable/icon_bankcard"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50"
+                                android:id="@+id/imageView4" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/black"
+                                    android:text="银行卡" />
+                                <TextView
+                                    android:id="@+id/tv_bank_charge"
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/title_color"
+                                    android:layout_marginLeft="@dimen/px_4"
+                                    android:layout_marginRight="@dimen/px_4"
+                                    tool:text="3" />
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/light_white"
+                                    android:text="张" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <!-- <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="match_parent">
+                         <LinearLayout
+                             android:id="@+id/ll_4_charfragment"
+                             android:layout_width="0dp"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:orientation="vertical"
+                             android:layout_height="match_parent">
+                             <ImageView
+                                 android:background="@drawable/icon_yishouhuo"
+                                 android:layout_width="@dimen/px_50"
+                                 android:layout_height="@dimen/px_50" />
+
+                             <TextView
+                                 android:layout_marginTop="@dimen/px_18"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="@dimen/px_text_26"
+                                 android:textColor="@color/black"
+                                 android:text="已完成"
+                                 android:id="@+id/textView5" />
+                         </LinearLayout>
+                         <View
+                             android:background="#dee0e1"
+                             android:layout_width="@dimen/px_1"
+                             android:layout_height="match_parent"/>
+                     </LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/px_1"
+                    android:background="@color/btnTextColor"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_balance_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_balance"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/black"
+                                    android:text="余额" />
+                                <TextView
+                                    android:id="@+id/tv_yue_charge"
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/title_color"
+                                    android:layout_marginLeft="@dimen/px_4"
+                                    tool:text="1000" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_jifen_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_integral"
+                                android:layout_width="@dimen/px_58"
+                                android:layout_height="@dimen/px_58" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/black"
+                                    android:text="积分" />
+                                <TextView
+                                    android:id="@+id/tv_jifen_charge"
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/title_color"
+                                    android:layout_marginLeft="@dimen/px_4"
+                                    tool:text="1000" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/ll_hongbao_charge"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:background="@drawable/icon_red"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50"
+                                android:id="@+id/imageView3" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/black"
+                                    android:text="红包" />
+                                <TextView
+                                    android:id="@+id/tv_hongbao_charge"
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/title_color"
+                                    android:layout_marginLeft="@dimen/px_4"
+                                    android:layout_marginRight="@dimen/px_4"
+                                    tool:text="3" />
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/light_white"
+                                    android:text="张" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:id="@+id/ll_card_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:background="@drawable/icon_bankcard"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50"
+                                android:id="@+id/imageView4" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/black"
+                                    android:text="银行卡" />
+                                <TextView
+                                    android:id="@+id/tv_bank_charge"
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/title_color"
+                                    android:layout_marginLeft="@dimen/px_4"
+                                    android:layout_marginRight="@dimen/px_4"
+                                    tool:text="3" />
+                                <TextView
+                                    android:layout_marginTop="@dimen/px_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/px_text_26"
+                                    android:textColor="@color/light_white"
+                                    android:text="张" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/px_1"
+                    android:background="@color/btnTextColor"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_activitymanage_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_huodong"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="活动管理" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_sellermanage_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_shangjia"
+                                android:layout_width="@dimen/px_56"
+                                android:layout_height="@dimen/px_56" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="商家管理" />
+                        </LinearLayout>
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_collectmoney_chage"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_guanli"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="管理的商家" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/px_1"
+                    android:background="@color/btnTextColor"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:id="@+id/ll_transationlist_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_jiaoyi"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="交易记录" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_unit_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_lianhe"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="联合运营" />
+                        </LinearLayout>
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_scan_scan_charge"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:background="@drawable/icon_er"
+                                android:layout_width="@dimen/px_50"
+                                android:layout_height="@dimen/px_50" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/px_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/px_text_26"
+                                android:textColor="@color/black"
+                                android:text="扫一扫付款" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="#dee0e1"
+                            android:layout_width="@dimen/px_1"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+

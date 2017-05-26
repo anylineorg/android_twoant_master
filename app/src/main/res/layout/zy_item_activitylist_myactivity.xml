@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="50"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="@dimen/px_30"
+            android:src="@drawable/em_chat_voice_call_normal"
+            android:id="@+id/iv_head_img_myactivity"
+            android:layout_width="@dimen/px_70"
+            android:layout_height="@dimen/px_70" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name_myactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/principalTitleTextColor"
+                tool:text="美车领袖洗车卡"
+                android:textSize="@dimen/px_text_32"/>
+            <TextView
+                android:id="@+id/tv_state_myactivity"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_30"
+                android:textColor="@color/holo_orange_light"
+                android:text="已完成"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_30"
+                android:textColor="@color/principalTitleTextColor"
+                android:text="活动商家："/>
+
+            <TextView
+                android:id="@+id/tv_shopname_myactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_checked_color"
+                tool:text="美车领袖"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_30"
+                android:textColor="@color/principalTitleTextColor"
+                android:text="电话："/>
+            <TextView
+                android:textColor="@color/principalTitleTextColor"
+                android:id="@+id/tv_tel_myactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_30"
+                tool:text="13253871210"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_6"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_30"
+                android:textColor="@color/principalTitleTextColor"
+                android:text="地址："/>
+            <TextView
+                android:id="@+id/tv_address_myactivity"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/principalTitleTextColor"
+                tool:text="黄岛区什么地方什么地方的某个地方的某个地方的某个地方"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

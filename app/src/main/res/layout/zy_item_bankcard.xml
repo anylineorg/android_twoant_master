@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/px_10"
+    android:paddingBottom="@dimen/px_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/click_layout"
+        android:background="@color/btnTextColor">
+
+        <ImageView
+            android:id="@+id/iv_img_bancard"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/px_90"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/px_90" />
+
+        <TextView
+            android:id="@+id/tv_typename_bankcard"
+            style="@style/long_font"
+            android:layout_toRightOf="@id/iv_img_bancard"
+            android:text="中国建设银行" />
+
+        <TextView
+            android:id="@+id/tv_banknumber_bankcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_26"
+            android:layout_toRightOf="@id/iv_img_bancard"
+            android:textColor="@color/light_white"
+            android:layout_below="@id/tv_typename_bankcard"
+            android:text="**** **** ****9658" />
+
+        <LinearLayout
+            android:id="@+id/ll_unbund_bankcard"
+            android:layout_width="@dimen/px_142"
+            android:layout_height="@dimen/px_90"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_alignTop="@id/iv_img_bancard"
+            android:clickable="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_type_bankcard"
+                tool:text="借记卡"
+                android:textColor="@color/light_white"
+                android:textSize="@dimen/px_text_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="解绑"
+                android:textSize="@dimen/px_text_29"
+                android:textColor="@color/title_color"
+                android:layout_marginTop="@dimen/px_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

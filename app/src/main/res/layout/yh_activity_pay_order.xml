@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <include layout="@layout/yh_view_divider_item" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            app:divider="@drawable/yh_divider_line_vertical"
+            app:showDividers="middle">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:weightSum="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_pay_receiver"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_30" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_receiver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_30"
+                    tools:text="玄泽科技" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:weightSum="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/px_20"
+                    android:paddingTop="@dimen/px_20"
+                    android:text="@string/action_pay_price"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_30" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:minWidth="@dimen/px_100"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textColorHint="@color/subordinationContentTextColor"
+                    android:textSize="@dimen/px_text_30"
+                    tools:text="100" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <ViewStub
+                android:id="@+id/view_stub_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/yh_stub_merchant_member" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_4"
+                android:background="@color/dividerLineColor" />
+
+            <ViewStub
+                android:id="@+id/view_stub_pay_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/yh_stub_pay_order" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ededed"
+    android:id="@+id/swipe_refresh_waitpay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:padding="@dimen/px_10"
+        android:id="@+id/lv_myactivity1"
+        android:background="#ededed"
+         android:dividerHeight="@dimen/px_10"
+        android:divider="#ededed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</android.support.v4.widget.SwipeRefreshLayout>

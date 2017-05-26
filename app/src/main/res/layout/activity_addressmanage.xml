@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/btnTextColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/px_107"
+                android:layout_height="@dimen/px_107"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/gray_arrow" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="管理收货地址"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_36" />
+        </RelativeLayout>
+
+        <net.twoant.master.widget.ScrollViewListView
+            android:layout_marginTop="@dimen/px_10"
+            android:id="@+id/lv_address_addressmanage"
+            android:background="@color/btnTextColor"
+            android:layout_width="match_parent"
+            android:dividerHeight="@dimen/px_6"
+            android:layout_height="wrap_content">
+        </net.twoant.master.widget.ScrollViewListView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_register_addressmanege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_18"
+            android:layout_marginRight="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_28"
+            android:background="@drawable/zy_frame_btn"
+            android:text="添加新地址"
+            android:layout_marginBottom="@dimen/px_30"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="@dimen/px_text_35" />
+
+    </LinearLayout>
+</ScrollView>

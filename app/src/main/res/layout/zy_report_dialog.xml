@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_shape"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_82">
+        <TextView
+            android:id="@+id/tv_exit_dialog_reward"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_close"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_marginRight="@dimen/px_10"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/px_text_40"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_34"
+            android:textColor="@color/half_transparent"
+            android:text="举报"
+            android:layout_alignBaseline="@+id/tv_exit_dialog_reward"
+            android:layout_alignBottom="@+id/tv_exit_dialog_reward"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_integral_dialog_reward"
+            android:background="@drawable/zy_fix_phone"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_marginRight="@dimen/px_50"
+            android:paddingLeft="@dimen/px_6"
+            android:hint="请输入举报原因"
+            android:gravity="left"
+            android:padding="@dimen/px_10"
+            android:textSize="@dimen/px_text_32"
+            android:layout_height="@dimen/px_200" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_reward"
+            android:layout_marginBottom="@dimen/px_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交举报"
+            android:textColor="@color/btnTextColor"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_marginTop="@dimen/px_18"
+            android:layout_marginRight="@dimen/px_50"
+            android:background="@drawable/zy_frame_btn"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

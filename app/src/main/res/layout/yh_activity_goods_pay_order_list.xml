@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle"
+    tools:context="net.twoant.master.ui.main.activity.GoodsPayOrderListActivity">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:paddingTop="@dimen/px_20">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_shop_avatar"
+            android:layout_width="@dimen/px_45"
+            android:layout_height="@dimen/px_45"
+            android:src="@drawable/ic_def_circle" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="商家名称" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            app:divider="@drawable/yh_divider_line"
+            app:showDividers="middle">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_select_dispatch_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yh_btn_press_transparent_grey"
+                android:clickable="true"
+                android:padding="@dimen/px_20">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/payment_type_select"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_select_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_back_right"
+                    android:drawablePadding="@dimen/px_10"
+                    android:drawableRight="@drawable/ic_back_right"
+                    android:text="@string/payment_type_select_inner"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/px_20"
+                    android:paddingTop="@dimen/px_20"
+                    android:text="@string/payment_buyer_message"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_buyer_input_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_marginStart="@dimen/px_10"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/payment_buyer_message_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_28" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_count_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lines="1"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingTop="@dimen/px_20"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="@string/payment_goods_hint" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_apply_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_30"
+            android:background="@drawable/yh_orange_bg_btn_press"
+            android:text="@string/payment_submit_order"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBgColor">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_convenient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="@dimen/px_2">
+
+        </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/fab_back_top"
+        android:layout_width="@dimen/px_60"
+        android:layout_height="@dimen/px_60"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/px_64"
+        android:layout_marginEnd="@dimen/px_32"
+        android:layout_marginRight="@dimen/px_32"
+        android:background="@android:color/transparent"
+        android:src="@drawable/yh_scroll_top_bg"
+        android:visibility="gone"
+        app:layout_behavior="@string/floating_button_behavior" />
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

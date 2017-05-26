@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_activtiusedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/backgroundColor"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/btnTextColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/px_107"
+                    android:layout_height="@dimen/px_107"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/gray_arrow" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动使用详情"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_36"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <!--头-->
+            <LinearLayout
+                android:id="@+id/ll_shop_activityusedetail"
+                android:padding="@dimen/px_12"
+                android:layout_marginTop="@dimen/px_10"
+                android:background="@color/btnTextColor"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_title_activityusedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_34"
+                    android:textColor="@color/principalTitleTextColor"
+                    tools:text="良子足疗店充值卡"/>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/px_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/aa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动商家："
+                        android:textColor="@color/principalTitleTextColor"
+                        android:textSize="@dimen/px_28"/>
+                    <TextView
+                        android:id="@+id/tv_shopname_activityusedetail"
+                        android:layout_toRightOf="@id/aa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_28"
+                        android:textColor="@color/title_checked_color"
+                        tools:text="今何在"/>
+                    <ImageView
+                        android:layout_marginRight="@dimen/px_10"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_back_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <net.twoant.master.widget.ScrollViewListView
+                android:layout_marginTop="@dimen/px_2"
+                android:id="@+id/lv_item_activityusedetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </net.twoant.master.widget.ScrollViewListView>
+            <!--活动详情-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/px_14"
+                android:background="@color/btnTextColor"
+                android:layout_marginTop="@dimen/px_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/btnTextColor"
+                    android:textSize="@dimen/px_text_34"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="活动详情"/>
+
+                <View
+                    android:layout_marginTop="@dimen/px_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_2"
+                    android:background="@color/lightGreyColor"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_24"
+                        android:textColor="@color/subordinationContentTextColor"
+                        android:text="时间:"/>
+                    <TextView
+                        android:id="@+id/tv_time_activityusedetail"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_24"
+                        android:textColor="@color/subordinationContentTextColor"
+                        tools:text="2016-12-01 09:00至2016-12-30 16:00"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_24"
+                        android:textColor="@color/subordinationContentTextColor"
+                        android:text="电话:"/>
+                    <TextView
+                        android:id="@+id/tv_tel_activityusedetail"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_24"
+                        android:textColor="@color/subordinationContentTextColor"
+                        tools:text="13253871210"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_24"
+                        android:textColor="@color/subordinationContentTextColor"
+                        android:text="活动地址:" />
+
+                    <TextView
+                        android:id="@+id/tv_address_activityusedetail"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px_24"
+                        android:textColor="@color/subordinationContentTextColor"
+                        tools:text="黄岛区月亮湾路帝邦数码城"/>
+                </LinearLayout>
+
+
+                <!--<WebView
+                    android:id="@+id/web_activityusedetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100">
+                </WebView>-->
+
+            </LinearLayout>
+
+            <!--使用记录-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/px_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_50"
+                    android:textSize="@dimen/px_text_32"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_marginBottom="@dimen/px_4"
+                    android:text="使用记录" />
+
+                <View
+                    android:layout_marginTop="@dimen/px_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_2"
+                    android:background="@color/lightGreyColor"/>
+
+            </LinearLayout>
+            <net.twoant.master.widget.ScrollViewListView
+                android:layout_alignBottom="@id/scroll_activtiusedetail"
+                android:id="@+id/lv_history_activityusedetail"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </net.twoant.master.widget.ScrollViewListView>
+            <LinearLayout
+                android:visibility="invisible"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_92">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/tl_use_activityusedetail"
+        android:background="@color/btnTextColor"
+        android:padding="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_34"
+            android:textColor="@color/principalTitleTextColor"
+            android:text="使用金额:"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_activityusedetail"
+            android:layout_toRightOf="@id/bb"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_centerInParent="true"
+                android:id="@+id/et_ues_activityusedetail"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_width="@dimen/px_106"
+                android:layout_height="@dimen/px_50"
+                android:inputType="numberDecimal|number"
+                android:singleLine="true"
+                android:background="@color/hintTextColor"
+                tools:text="1"/>
+            <TextView
+                android:id="@+id/cc"
+                android:layout_marginLeft="@dimen/px_4"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(元)"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginRight="@dimen/px_10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_enter_activityusedetail"
+            android:layout_width="@dimen/px_140"
+            android:layout_height="@dimen/px_70"
+            android:background="@drawable/zy_frame_btn"
+            android:text="确定"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="@dimen/px_text_35" />
+    </RelativeLayout>
+
+</RelativeLayout>

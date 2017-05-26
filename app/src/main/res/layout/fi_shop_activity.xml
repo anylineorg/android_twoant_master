@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/lightGreyColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"></include>
+    <include layout="@layout/yh_view_divider_line"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/whiteBgColor"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额"
+            android:id="@+id/textView20"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:id="@+id/accont_price"
+            android:textColor="@color/red_f9"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/textView20"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/px_text_50"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现规则"
+            android:id="@+id/guize"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/textView20"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_above="@+id/guize"
+            android:textSize="12sp"
+            android:layout_marginBottom="-10dp"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:src="@drawable/ease_msg_state_fail_resend" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_claear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/mouth"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/px_text_36"
+        android:layout_alignParentLeft="true" />
+        <ImageView
+            android:layout_width="@dimen/px_70"
+            android:layout_height="@dimen/px_70"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/claear"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/write_huodong_time" />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:id="@+id/tab_title_myactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/btnTextColor"
+        app:tabSelectedTextColor="@color/navigationTextColor"
+        app:tabTextColor="@color/principalTitleTextColor"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

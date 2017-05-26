@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_53"
+        android:layout_marginStart="@dimen/px_53"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:padding="@dimen/px_15"
+        android:src="@drawable/pick_camera" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_gravity="end"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingStart="@dimen/px_20"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete" />
+
+</android.support.v7.widget.ContentFrameLayout>

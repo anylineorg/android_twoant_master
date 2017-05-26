@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_260"
+    android:weightSum="64">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price_red_packet"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="16"
+        android:gravity="center"
+        android:background="@color/navigationTextColor"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_60"
+        tools:text="￥500" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:background="@color/navigationTextColor"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="31"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_10"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_red_packet_name_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/px_14"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_34"
+            tools:text="商铺红包" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_red_packet_description_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_28"
+            tools:text="现领红包在购物" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_valid_date_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_34"
+            tools:text="10/11-10/30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_condition_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_26"
+            tools:text="满100可用" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_draw_red_packet"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="17"
+        android:clickable="true"
+        android:background="@drawable/yh_press_orange_grey"
+        android:gravity="center"
+        android:padding="@dimen/px_40"
+        android:text="@string/action_immediately_get"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_36"
+        android:textStyle="bold" />
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/backgroundColor"
+    tools:context="net.twoant.master.ui.my_center.activity.FixPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_back_goodsmanager"
+            android:layout_width="match_parent"
+            android:background="@drawable/zy_selector_bg"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_centerVertical="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/zy_selector_white_bg"
+                android:src="@drawable/gray_arrow" />
+            <TextView
+                android:padding="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_70"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="变成成功"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_32" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/px_70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv_image_state"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/duigou_big" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/px_30"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/px_text_36"
+        android:textColor="@color/principalTitleTextColor"
+        android:layout_height="wrap_content"
+        android:text="当前绑定的手机号为:1515511"
+        android:id="@+id/textView23" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_fixphone_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_18"
+        android:layout_marginRight="@dimen/px_18"
+        android:layout_marginTop="@dimen/px_36"
+        android:background="@drawable/zy_frame_btn"
+        android:text="完 成"
+        android:textColor="@color/whiteBgColor"
+        android:textSize="@dimen/px_text_35" />
+
+
+</LinearLayout>

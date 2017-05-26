@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="net.twoant.master.ui.main.activity.ActionListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AiSouAppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_simple_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@drawable/ic_action_back"
+            app:popupTheme="@style/AiSouAppTheme.PopupOverlay"
+            app:title="@string/empty_string">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title_tool_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="@dimen/px_text_32"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBgColor"
+            android:gravity="center_vertical"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <net.twoant.master.widget.MarqueeTextView
+                android:id="@+id/tv_address_header"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px_80"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="@dimen/px_20"
+                android:drawableStart="@drawable/ic_address"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:singleLine="true"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="黄岛区" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_24"
+                tools:text="120km" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/yh_white_grey_bg_btn_press"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/subordinationTitleTextColor" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_back_top"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_80"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/px_48"
+        android:layout_marginEnd="@dimen/px_32"
+        android:layout_marginRight="@dimen/px_32"
+        android:background="@android:color/transparent"
+        android:src="@drawable/yh_scroll_top_bg"
+        app:layout_behavior="@string/floating_button_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

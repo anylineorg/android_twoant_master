@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/swipe_refresh_waitpay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_waitpay"
+        android:padding="@dimen/px_10"
+        android:background="@color/btnTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_aa"
+            android:layout_width="@dimen/px_45"
+            android:layout_height="@dimen/px_45"
+            android:background="@drawable/ic_tab_merchant"/>
+        <TextView
+            android:id="@+id/tv_shopname_waitpay"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/px_text_30"
+            android:layout_toRightOf="@id/iv_aa"
+            android:layout_width="wrap_content"
+            tools:text="米兰莫汉斯"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_shopname_waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_right"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_28"
+            android:layout_centerVertical="true"
+            android:textColor="@color/title_checked_color"
+            android:text="等待买家付款"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_item_type_waitpay" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_contain_waitpay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_itemcontain_waitpay"
+        android:layout_marginTop="@dimen/px_10"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:background="@color/btnTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_60">
+
+        <TextView
+            android:id="@+id/tv_yunfei_waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textSize="@dimen/px_text_24"
+            android:visibility="gone"
+            android:text="(含运费¥0.00)"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_itemprice_waitpay"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textSize="@dimen/px_text_30"
+            android:layout_marginRight="@dimen/px_10"
+            android:text="¥24.0"/>
+
+        <TextView
+            android:id="@+id/tv_heji_waitpay"
+            android:layout_toLeftOf="@id/tv_itemprice_waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="合计:"
+            android:layout_marginRight="@dimen/px_10"
+            android:textSize="@dimen/px_text_24" />
+
+        <TextView
+            android:id="@+id/tv_jian_waitpay"
+            android:layout_toLeftOf="@id/tv_heji_waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="件商品"
+            android:layout_marginRight="@dimen/px_10"
+            android:textSize="@dimen/px_text_24" />
+
+        <TextView
+            android:id="@+id/tv_item_count_waitpay"
+            android:layout_toLeftOf="@id/tv_jian_waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="2"
+            android:textSize="@dimen/px_text_24" />
+
+        <TextView
+            android:id="@+id/tv_gong_waitpay"
+            android:layout_toLeftOf="@id/tv_item_count_waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="共"
+            android:textSize="@dimen/px_text_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_state_waitpay"
+        android:background="@color/btnTextColor"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_pay_waitpay"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_50"
+            android:background="@drawable/zy_frame_waitpay"
+            android:text="付款"
+            android:textColor="@color/whiteBgColor"
+            android:textSize="@dimen/px_text_30" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_canel_order_waitpay"
+            android:layout_toLeftOf="@id/btn_pay_waitpay"
+            android:layout_marginRight="@dimen/px_16"
+            android:layout_width="@dimen/px_150"
+            android:layout_height="@dimen/px_50"
+            android:gravity="center"
+            android:background="@drawable/zy_bg_grey_border"
+            android:text="取消订单"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px_text_30" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_contact_waitpay"
+            android:layout_toLeftOf="@id/btn_canel_order_waitpay"
+            android:layout_marginRight="@dimen/px_16"
+            android:layout_width="@dimen/px_150"
+            android:layout_height="@dimen/px_50"
+            android:background="@drawable/zy_bg_grey_border"
+            android:text="联系卖家"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px_text_30" />
+    </RelativeLayout>
+</LinearLayout>

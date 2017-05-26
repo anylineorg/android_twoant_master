@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_90">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/px_2"
+        android:layout_width="match_parent"
+        android:background="@color/btnTextColor"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px_20"
+            android:textColor="@color/principalTitleTextColor"
+            android:enabled="false"
+            android:id="@+id/tv_classifyname_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="@dimen/px_text_36"
+            android:text="饼干"/>
+        <TextView
+            android:id="@+id/tv_btn_classifyname_item"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:layout_marginRight="@dimen/px_20"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/yh_bg_color_primary_border"/>
+    </RelativeLayout>
+
+</LinearLayout>

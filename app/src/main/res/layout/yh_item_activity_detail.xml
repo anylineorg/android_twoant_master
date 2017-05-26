@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_web_view_parent"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <include layout="@layout/yh_view_divider_item" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:text="@string/action_detail_describe"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+    <WebView
+        android:id="@+id/wv_action_detail_describe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+</android.support.v7.widget.LinearLayoutCompat>

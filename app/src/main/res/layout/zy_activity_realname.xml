@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_realname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加银行卡"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="请绑定持卡人本人的银行卡"
+        android:textSize="@dimen/px_text_27"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:layout_marginLeft="@dimen/px_18"
+        android:layout_marginTop="@dimen/px_18"
+        android:layout_marginBottom="@dimen/px_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="持卡人"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+        <EditText
+            android:hint="姓名"
+            android:textColorHint="@color/light_white"
+            android:layout_marginLeft="@dimen/px_106"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:id="@+id/et_name_realname"
+            style="@style/long_font" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="身份证号"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+        <EditText
+            android:hint="身份证号"
+            android:digits="@string/identification"
+            android:textColorHint="@color/light_white"
+            android:layout_marginLeft="@dimen/px_36"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:id="@+id/et_identity_realname"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="卡号"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+        <EditText
+            android:hint="银行卡号"
+            android:textColorHint="@color/light_white"
+            android:layout_marginLeft="@dimen/px_106"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:id="@+id/et_banknum_realname"
+            style="@style/long_font" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnTextColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="银行预留电话"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+
+        <EditText
+            android:hint="手机号"
+            android:textColorHint="@color/light_white"
+            android:layout_marginLeft="@dimen/px_35"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:id="@+id/et_telephone_realname"
+            android:textColor="@color/black"
+            style="@style/long_font" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:id="@+id/bt_post_realname"
+        android:textColor="@color/btnTextColor"
+        android:layout_marginLeft="@dimen/px_17"
+        android:layout_marginTop="@dimen/px_35"
+        android:layout_marginRight="@dimen/px_17"
+        android:background="@drawable/zy_post_bg"
+        android:textSize="@dimen/px_36" />
+
+</LinearLayout>

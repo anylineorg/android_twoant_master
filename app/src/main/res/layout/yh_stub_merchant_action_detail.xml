@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_examine_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_orange"
+        android:text="@string/action_examine_statement"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_28" />
+</android.support.v7.widget.LinearLayoutCompat>

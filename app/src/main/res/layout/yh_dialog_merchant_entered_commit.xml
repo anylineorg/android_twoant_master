@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yh_merchant_entered_conmmit_activity"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whiteBgColor"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:drawableLeft="@drawable/ic_merchant_entered"
+        android:drawableStart="@drawable/ic_merchant_entered"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px_60"
+        android:drawablePadding="@dimen/px_26"
+        android:textColor="@color/currentSelectColor"
+        android:textSize="@dimen/px_text_38"
+        android:text="@string/merchant_entered_commit_success"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_hint_info"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginBottom="@dimen/px_60"
+        android:gravity="center"
+        android:textSize="@dimen/px_text_30"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_confirm_dialog_merchant_entered_commit"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_width="match_parent"
+        android:textColor="@color/whiteTextColor"
+        android:text="@string/confirm"
+        android:textSize="@dimen/px_text_36"
+        android:background="@drawable/yh_btn_press_orange"
+        android:layout_height="wrap_content" />
+
+</android.support.v7.widget.LinearLayoutCompat>

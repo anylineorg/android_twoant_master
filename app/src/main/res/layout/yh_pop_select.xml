@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="end"
+    android:layout_height="wrap_content"
+    android:background="@color/btnTextColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ListView
+        android:id="@+id/lv_pop_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/lightGreyColor"
+        android:cacheColorHint="#00000000"
+        android:background="@color/btnTextColor"
+        android:scrollbars="none"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never">
+    </ListView>
+
+</android.support.v7.widget.LinearLayoutCompat>

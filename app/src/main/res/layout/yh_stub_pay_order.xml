@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_red_packet_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/px_20"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/payment_preferential"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_red_packet_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/ic_back_right"
+            android:drawablePadding="@dimen/px_10"
+            android:drawableRight="@drawable/ic_back_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_26"
+            tools:text="50元红包" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_integral_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_30"
+        tools:text="@string/action_pay_used" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_integral_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_pay_deductions"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_30" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_use_integral_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_5"
+            android:layout_marginStart="@dimen/px_5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/action_wallet_hint"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingTop="@dimen/px_20"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textColorHint="@color/darkGreyColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_integral_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/integral_of_money"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_use_integral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/px_5"
+            android:layout_marginLeft="@dimen/px_5"
+            android:layout_marginRight="@dimen/px_5"
+            android:layout_marginStart="@dimen/px_5"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="@string/action_integral_hint"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingTop="@dimen/px_20"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textColorHint="@color/darkGreyColor"
+            android:textSize="@dimen/px_text_28" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_wallet_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:weightSum="1">
+
+        <!--<android.support.v7.widget.AppCompatTextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableLeft="@drawable/ic_action_pay_wallet"-->
+        <!--android:drawablePadding="@dimen/px_20"-->
+        <!--android:drawableStart="@drawable/ic_action_pay_wallet"-->
+        <!--android:text="@string/action_pay_wallet"-->
+        <!--android:textColor="@color/subordinationTitleTextColor"-->
+        <!--android:textSize="@dimen/px_text_30" />-->
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_wallet_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="@string/action_pay_used" />
+        <!--android:background="@drawable/yh_bg_grey_border"-->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_use_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_5"
+            android:layout_marginStart="@dimen/px_5"
+            android:gravity="center"
+            android:hint="@string/action_wallet_hint"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minWidth="@dimen/px_100"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingTop="@dimen/px_20"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textColorHint="@color/darkGreyColor"
+            android:textSize="@dimen/px_text_28" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/px_20"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_pay_need"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_30" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_remain_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/currentSelectColor"
+            android:textSize="@dimen/px_text_30"
+            tools:text="100" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_20"
+        android:background="@drawable/yh_btn_press_orange"
+        android:text="@string/action_pay_affirm"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_30" />
+
+</android.support.v7.widget.LinearLayoutCompat>

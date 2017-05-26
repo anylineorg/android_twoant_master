@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_goods_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_image_btn_press_gray"
+    android:gravity="top">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_goods_img"
+        android:layout_width="@dimen/px_200"
+        android:layout_height="@dimen/px_168"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_10"
+        android:layout_marginTop="@dimen/px_10"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_def_large" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_10"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="@dimen/px_10"
+            android:layout_marginRight="@dimen/px_10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="商品名称会计分录盛开的分解落实到飞机上看是打飞机圣诞快乐就是打飞机代课老师" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_introduce_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginEnd="@dimen/px_10"
+            android:layout_marginRight="@dimen/px_10"
+            android:paddingBottom="@dimen/px_3"
+            android:paddingTop="@dimen/px_3"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_20"
+            tools:text="这里是亮点，地方拉萨的风景撒打开了房间圣诞快乐附近阿萨德六块腹肌莱克斯顿就水电费水电费都是发送到发送到的是的发送到" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="@dimen/px_text_20"
+            tools:text="阅览:1000 销量:1000" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="25dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/px_text_24"
+                tools:text="价格" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/iv_subtract_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="@dimen/px_20"
+                android:src="@drawable/ic_goods_subtract"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_goods_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/subordinationContentTextColor"
+                android:textSize="@dimen/px_text_24"
+                android:textStyle="bold"
+                tools:text="0" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/iv_add_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:padding="@dimen/px_20"
+                android:src="@drawable/ic_goods_add" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

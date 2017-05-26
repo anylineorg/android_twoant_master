@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 连框颜色值 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#8c8c8c" />
+            <size android:height="@dimen/px_40" android:width="@dimen/px_40"/>
+        </shape>
+    </item>
+
+    <!-- 主体背景颜色值 -->
+    <item android:bottom="2dp" android:top="2dp" android:right="2dp" android:left="2dp">
+        <shape android:shape="oval"  >
+            <solid android:color="@color/navigationTextColor"/>
+            <size android:height="@dimen/px_40" android:width="@dimen/px_40"/>
+            <stroke android:color="#ffffff"
+                android:width="@dimen/px_2"/>
+        </shape>
+    </item>
+</layer-list>

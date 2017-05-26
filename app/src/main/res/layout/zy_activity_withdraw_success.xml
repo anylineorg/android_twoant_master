@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/dividerLineColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现详情"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/px_12"
+        android:layout_width="match_parent"
+        android:background="@color/btnTextColor"
+        android:layout_height="@dimen/px_340">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_image_state"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/px_220"
+            android:layout_height="@dimen/px_220"
+            android:background="@drawable/duigou_big_1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title_withdraw_success"
+            android:gravity="center_horizontal"
+            android:background="@color/btnTextColor"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/px_text_36"
+            android:layout_height="@dimen/px_100"
+            tool:text="提现申请已提交"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_3"/>
+
+    <LinearLayout
+        android:background="@color/btnTextColor"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_withdraw_cuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_bankcard_withdraw_success"
+                android:text="银行卡"
+                android:padding="@dimen/px_10"
+                android:textSize="@dimen/px_text_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_banknum_withdraw_success"
+                android:layout_alignParentRight="true"
+                tool:text="邮政银行  尾号2296"
+                android:layout_marginRight="@dimen/px_10"
+                android:padding="@dimen/px_10"
+                android:textSize="@dimen/px_text_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="提现金额"
+                android:padding="@dimen/px_10"
+                android:textSize="@dimen/px_text_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_money_withdraw_success"
+                android:layout_alignParentRight="true"
+                tool:text="¥200.00"
+                android:layout_marginRight="@dimen/px_10"
+                android:padding="@dimen/px_10"
+                android:textSize="@dimen/px_text_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_enter_recharge_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_18"
+        android:layout_marginRight="@dimen/px_18"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/zy_frame_btn"
+        android:text="完 成"
+        android:textColor="@color/whiteBgColor"
+        android:textSize="@dimen/px_text_35" />
+</LinearLayout>

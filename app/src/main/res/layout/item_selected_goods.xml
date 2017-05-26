@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#fff"
+    android:layout_marginTop="1dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_aa"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="invisible"
+            android:clickable="true"
+            android:id="@+id/tvMinus"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/icon_goodsdetail_reduce"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="0"
+            android:id="@+id/count"
+            android:minWidth="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="invisible"
+            android:clickable="true"
+            android:id="@+id/tvAdd"
+            android:textStyle="bold"
+            android:background="@drawable/icon_goodsdetail_plus"
+            android:gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_toLeftOf="@id/ll_aa"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="￥ 100"
+        android:textSize="16sp"
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_toLeftOf="@id/tvCost"
+        android:textSize="16sp"
+        tool:text="商品名"
+        android:singleLine="true"
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

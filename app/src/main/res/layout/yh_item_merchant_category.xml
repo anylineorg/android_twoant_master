@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.twoant.master.ui.main.widget.MarqueeTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_item_select_state"
+    android:ellipsize="marquee"
+    android:enabled="true"
+    android:gravity="center"
+    android:lines="1"
+    android:maxLines="1"
+    android:singleLine="true"
+    android:padding="@dimen/px_20"
+    android:textColor="@color/subordinationTitleTextColor"
+    android:textSize="@dimen/px_text_24" />

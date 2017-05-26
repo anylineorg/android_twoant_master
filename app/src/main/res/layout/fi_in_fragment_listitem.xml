@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_89">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/time"
+            android:layout_gravity="center_vertical"
+            android:text="12-11 12:12" />
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/px_60"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:src="@drawable/ic_share_qq" />
+        <TextView
+            android:id="@+id/sum_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="+123411" />
+        <TextView
+            android:id="@+id/red_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0.00" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/sx_price"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="-1222.00" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/end_price"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:text="+10012a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="-2dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/px_text_20"
+            android:singleLine="true"
+            tool:text="" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:id="@+id/product_name"
+            android:textSize="@dimen/px_text_20"
+            android:singleLine="true"
+            tool:text="日期阿达大师" />
+    </LinearLayout>
+
+
+</LinearLayout>

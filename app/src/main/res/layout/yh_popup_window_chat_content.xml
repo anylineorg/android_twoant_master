@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/px_90">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_relay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/px_20"
+        android:clickable="true"
+        android:background="@drawable/yh_press_transparent_white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_12"
+        android:paddingRight="@dimen/px_12"
+        android:drawableRight="@drawable/yh_line_chat_popup_window"
+        android:drawableEnd="@drawable/yh_line_chat_popup_window"
+        android:paddingTop="@dimen/px_20"
+        android:text="@string/chat_popup_window_relay"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_26" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_copy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/yh_press_transparent_white"
+        android:drawablePadding="@dimen/px_20"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px_20"
+        android:drawableRight="@drawable/yh_line_chat_popup_window"
+        android:drawableEnd="@drawable/yh_line_chat_popup_window"
+        android:paddingLeft="@dimen/px_12"
+        android:paddingRight="@dimen/px_12"
+        android:paddingTop="@dimen/px_20"
+        android:text="@string/chat_popup_window_copy"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_26" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/yh_press_transparent_white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_12"
+        android:paddingRight="@dimen/px_12"
+        android:paddingTop="@dimen/px_20"
+        android:text="@string/chat_popup_window_delete"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_26" />
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/yh_white_bg_arc"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px_60"
+    android:paddingRight="@dimen/px_60"
+    app:divider="@drawable/ic_line_imaginary">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_20"
+        android:text="@string/merchant_key_word_setting"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_32" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@drawable/ic_line_imaginary" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20"
+            android:text="@string/merchant_key_word_first"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_keyword_first"
+            style="@style/MerchantEnteredRightHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:hint="@string/merchant_key_word_request"
+            android:lines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:maxLength="8"
+            android:maxLines="1" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@drawable/ic_line_imaginary" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20"
+            android:text="@string/merchant_key_word_second"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_keyword_second"
+            style="@style/MerchantEnteredRightHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:hint="@string/merchant_key_word_request"
+            android:lines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:maxLength="8"
+            android:maxLines="1" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@drawable/ic_line_imaginary" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20"
+            android:text="@string/merchant_key_word_third"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_keyword_third"
+            style="@style/MerchantEnteredRightHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:gravity="start|center_vertical"
+            android:hint="@string/merchant_key_word_request"
+            android:lines="1"
+            android:maxLength="8"
+            android:maxLines="1" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@drawable/ic_line_imaginary" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_confirm_dialog_merchant_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_70"
+        android:layout_marginBottom="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@drawable/yh_btn_press_orange"
+        android:text="@string/merchant_key_word_confirm"
+        android:textColor="@color/whiteTextColor" />
+</android.support.v7.widget.LinearLayoutCompat>

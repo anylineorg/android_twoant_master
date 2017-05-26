@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_publish_dynamic"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="net.twoant.master.ui.my_center.fragment.PublishDynamicActivity">
+
+    <include layout="@layout/include_title"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_content_dynamic"
+        android:padding="@dimen/px_16"
+        android:layout_marginTop="@dimen/px_14"
+        android:layout_width="match_parent"
+        android:hint="这一刻的想法..."
+        android:gravity="left"
+        android:textSize="@dimen/px_text_30"
+        android:background="@color/whiteBgColor"
+        android:layout_height="@dimen/px_280"/>
+
+    <ImageView
+        android:id="@+id/iv_emoji_publishdynamic"
+        android:layout_marginLeft="@dimen/px_25"
+        android:layout_width="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_height="@dimen/px_50"
+        android:background="@drawable/icon_face_nomal"/>
+
+    <GridView
+        android:id="@+id/gv_publis_dynamic"
+        android:layout_marginTop="@dimen/px_14"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:background="@color/whiteBgColor"
+        android:layout_height="wrap_content">
+    </GridView>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

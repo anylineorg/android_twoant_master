@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.twoant.master.ui.main.activity.MainActivity">
+
+
+    <!--    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_bg" />-->
+
+    <FrameLayout
+        android:id="@+id/main_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_above="@id/view_bg"
+        android:alpha="0.5"
+        android:background="@color/darkGreyColor" />
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_98"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/whiteBgColor" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="true"
+        android:gravity="bottom"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/ll_chat_navigation_tab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_98"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_chat_icon"
+                    android:layout_width="@dimen/px_45"
+                    android:layout_height="@dimen/px_45"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_chat" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_chat_icon"
+                    android:text="@string/navigation_tab_chat"
+                    android:textColor="@color/subordinationTitleTextColor"
+                    android:textSize="@dimen/px_text_26" />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_unread_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/ll_chat"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/ll_chat"
+                android:background="@drawable/em_unread_count_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px_text_20"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/px_4"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_info_navigation_tab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_98"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_45"
+                android:layout_height="@dimen/px_45"
+                android:src="@drawable/ic_info" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_tab_people_info"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_home_navigation_tab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_114"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:src="@drawable/ic_home" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_payment_navigation_tab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_98"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_45"
+                android:layout_height="@dimen/px_45"
+                android:src="@drawable/ic_pay" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_tab_payment"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_center_navigation_tab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_98"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/px_45"
+                android:layout_height="@dimen/px_45"
+                android:src="@drawable/ic_center" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_my_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_tab_center"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>

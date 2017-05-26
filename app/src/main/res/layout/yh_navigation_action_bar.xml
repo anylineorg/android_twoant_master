@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_location_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_10"
+        android:background="@drawable/yh_press_transparent_dark_orange"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:minWidth="@dimen/px_80"
+        android:padding="@dimen/px_10"
+        android:text="@string/location"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/px_text_30" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_information_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginStart="@dimen/px_10"
+        android:background="@drawable/yh_press_transparent_dark_orange"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/px_20">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_info_navigation"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_35"
+            android:src="@drawable/ic_none_info" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_page_info"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_18" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_60"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/tv_location_navigation"
+        android:layout_toLeftOf="@id/ll_information_navigation"
+        android:layout_toRightOf="@id/tv_location_navigation"
+        android:layout_toStartOf="@id/ll_information_navigation"
+        android:background="@color/whiteBgColor" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_drop_down_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/bg_view"
+        android:layout_alignLeft="@id/bg_view"
+        android:layout_alignStart="@id/bg_view"
+        android:layout_alignTop="@id/bg_view"
+        android:background="@drawable/yh_image_btn_press_gray"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_select_search_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commodity_main_page_toolbar_search_option"
+            android:textColor="@color/navigationTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/px_20"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginStart="@dimen/px_10"
+            android:src="@drawable/ic_drop_down" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_search_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/bg_view"
+        android:layout_alignEnd="@id/bg_view"
+        android:layout_alignRight="@id/bg_view"
+        android:layout_alignTop="@id/bg_view"
+        android:layout_centerVertical="true"
+        android:background="@drawable/yh_image_btn_press_gray"
+        android:clickable="true"
+        android:minHeight="@dimen/px_40"
+        android:minWidth="@dimen/px_40"
+        android:paddingLeft="@dimen/px_12"
+        android:paddingRight="@dimen/px_12"
+        android:src="@drawable/ic_search" />
+
+    <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+        android:id="@+id/search_auto_complete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_5"
+        android:layout_marginStart="@dimen/px_5"
+        android:layout_toEndOf="@id/ll_drop_down_navigation"
+        android:layout_toLeftOf="@id/iv_search_navigation"
+        android:layout_toRightOf="@id/ll_drop_down_navigation"
+        android:layout_toStartOf="@id/iv_search_navigation"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/search_hint_info"
+        android:imeActionId="@+id/search"
+        android:imeActionLabel="@string/main_page_search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/principalTitleTextColor"
+        android:textColorHint="@color/hintTextColor"
+        android:textSize="@dimen/px_text_22" />
+
+
+</RelativeLayout>

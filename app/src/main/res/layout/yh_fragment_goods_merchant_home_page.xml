@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view_merchant_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBgColor"
+    android:weightSum="10"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <!--<android.support.v7.widget.LinearLayoutCompat-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/px_20"-->
+    <!--android:text="@string/merchant_goods_category"-->
+    <!--android:textColor="@color/colorPrimary" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_left_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="2.2"
+        android:background="@color/whiteGreyColor" />
+
+    <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_right_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7.8" />
+
+</android.support.v7.widget.LinearLayoutCompat>

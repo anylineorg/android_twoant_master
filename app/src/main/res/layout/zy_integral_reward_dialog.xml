@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_shape"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100">
+        <TextView
+            android:id="@+id/tv_exit_dialog_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_close"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_marginRight="@dimen/px_10"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/px_text_40"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_34"
+            android:textColor="@color/half_transparent"
+            android:text="积分赞赏"
+            android:layout_alignBaseline="@+id/tv_exit_dialog_reward"
+            android:layout_alignBottom="@+id/tv_exit_dialog_reward"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/darkGreyColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_4"/>
+
+    <LinearLayout
+       android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/px_18"
+            android:id="@+id/tv_comment_convenientinfo"
+            android:layout_marginBottom="@dimen/px_10"
+            android:text="积分:"
+            android:textColor="@color/bottom_bar_normal_bg"
+
+            android:textSize="@dimen/px_text_36"
+            android:layout_marginLeft="@dimen/px_50"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_80" />
+
+        <EditText
+            android:id="@+id/et_integral_dialog_reward"
+            android:background="@drawable/zy_fix_phone"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_50"
+            android:paddingLeft="@dimen/px_6"
+            android:textSize="@dimen/px_text_32"
+            android:layout_height="@dimen/px_72" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_reward"
+            android:layout_marginBottom="@dimen/px_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="赞 赏"
+            android:textColor="@color/btnTextColor"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_marginTop="@dimen/px_18"
+            android:layout_marginRight="@dimen/px_50"
+            android:background="@drawable/zy_frame_btn"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

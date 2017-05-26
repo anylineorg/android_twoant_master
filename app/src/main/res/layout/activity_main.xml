@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="net.twoant.master.MainActivity">
+
+    <Button
+        android:id="@+id/click_me_BN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络测试"
+        />
+
+    <Button
+        android:id="@+id/click_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        />
+    <Button
+        android:id="@+id/wangjimima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        />
+    <Button
+        android:id="@+id/seller_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商家管理"
+        />
+
+    <TextView
+        android:id="@+id/result_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+</LinearLayout>

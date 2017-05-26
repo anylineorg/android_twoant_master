@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_group"
+    android:clickable="true"
+    android:layout_height="@dimen/px_100"
+    android:background="@drawable/yh_chat_list_item_bg"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/px_10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_group_avatar"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_80"
+        tools:src="@drawable/em_group_icon" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_28" />
+
+</android.support.v7.widget.LinearLayoutCompat>

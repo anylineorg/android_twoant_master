@@ -1,0 +1,165 @@
+apply plugin: 'com.android.application'
+apply from: 'tinker-support.gradle'
+apply plugin: 'bugly'
+
+bugly {
+    appId = '98c4f30e10' // 注册时分配的App ID
+    appKey = '13f8171b-0d40-4d87-86e0-28b38d846f7b' // 注册时分配的App Key
+    debug = true
+    execute = true //插件开关
+    upload = true //上传开关
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.3'
+    // recommend
+    dexOptions {
+        jumboMode = true
+    }
+
+    /*
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }*/
+
+    /* productFlavors {
+         xiaomi {
+
+         }
+         yyb {
+
+         }
+     }*/
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "net.twoant.master"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 126
+        versionName "1.2.6"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi', 'x86'
+
+        }
+        productFlavors {
+            yybao {}
+            wandoujia {}
+            baidu {}
+            c360 {}
+            uc {}
+
+            productFlavors.all { flavor ->
+                flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+            }
+        }
+//        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        release {
+            storeFile file("two_ant.jks")
+            storePassword "password"
+            keyAlias "two_ants"
+            keyPassword "password"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+
+            // 移除无用的resource文件
+            shrinkResources false
+
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        //def fileName = "app_v${defaultConfig.versionName}_${releaseTime()}.apk"
+                        def fileName = "aisou_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:25.0.1'
+    testCompile 'junit:junit:4.12'
+
+    //日志框架
+    compile 'com.orhanobut:logger:1.15'
+    //recycler view
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    //循环滚动的viewPager
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //okhttp
+    compile 'com.zhy:okhttputils:2.6.2'
+    //gson
+    compile 'com.google.code.gson:gson:2.4'
+    //环信
+    compile project(':easeUI_CN')
+    //图片选择
+    compile 'com.darsh.multipleimageselect:multipleimageselect:1.0.4'
+    //鲁班压缩
+    compile 'me.shaohui.advancedluban:library:1.3.2'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //滚轮
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    //ZXing核心库core.jar
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.google.zxing:android-core:3.2.1'
+    //富文本
+    compile project(':richeditor')
+    //bottomsheet
+    compile 'com.flipboard:bottomsheet-core:1.5.1'
+    //腾讯bugly，热更新
+    compile 'com.tencent.bugly:crashreport_upgrade:1.2.4.0'
+    //diskCache
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile project(path: ':redpacketlibrary')
+}

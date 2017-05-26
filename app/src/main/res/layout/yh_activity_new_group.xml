@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackgroundColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_group_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_250"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_def_action" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:padding="@dimen/px_20"
+                    android:text="@string/chat_click_change_header_img"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/px_text_28"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+            </android.support.v7.widget.ContentFrameLayout>
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_10"
+                android:background="@drawable/em_button_normal_shape"
+                android:hint="@string/group_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_text_26" />
+
+            <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="500">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edit_group_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px_10"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:background="@drawable/em_button_normal_shape"
+                    android:gravity="top"
+                    android:hint="@string/Group_chat_profile"
+                    android:lines="5"
+                    android:maxLength="500"
+                    android:padding="@dimen/px_20"
+                    android:textSize="@dimen/px_text_26" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:background="@drawable/yh_white_grey_bg_btn_press"
+                android:button="@drawable/em_checkbox_bg_selector"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:text="@string/Whether_the_public"
+                android:textSize="@dimen/px_text_26" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_member_inviter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/px_10"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_weight="0"
+                android:background="@drawable/yh_white_grey_bg_btn_press"
+                android:button="@drawable/em_checkbox_bg_selector"
+                android:padding="@dimen/px_20"
+                android:text="@string/Open_group_members_invited" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

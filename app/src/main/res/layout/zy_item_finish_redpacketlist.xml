@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/btnTextColor"
+    android:layout_height="@dimen/px_120">
+
+   <ImageView
+       android:id="@+id/iv_img_redpacketlist"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="@dimen/px_6"
+       android:layout_width="@dimen/px_110"
+       android:scaleType="centerCrop"
+       android:layout_height="@dimen/px_110"
+       android:background="@drawable/shezhitouxiang"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/iv_img_redpacketlist"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/px_14"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mary蛋糕店"
+                android:layout_marginTop="@dimen/px_20"
+                android:id="@+id/shop_name"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/px_text_34"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_start_end"
+                android:textColor="@color/text_grey"
+                tool:text="使用时间:2016.6.25-2016.12.30"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/px_150"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_hui">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btnTextColor"
+                android:id="@+id/red_price"
+                android:gravity="center"
+                android:textSize="@dimen/px_text_30"
+                android:text="¥5"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/red_use_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_22"
+                android:textColor="@color/btnTextColor"
+                android:text="满99元可用"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/px_120"
+            android:layout_height="@dimen/px_84"
+            android:background="@drawable/icon_shiyong"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

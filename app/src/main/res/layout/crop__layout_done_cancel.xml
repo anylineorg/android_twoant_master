@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--takePhoto自定义 裁剪视图-->
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/yh_press_transparent_dark_orange"
+        android:text="@string/crop_cancel"
+        android:textColor="@color/whiteTextColor" />
+
+    <View
+        android:layout_width="@dimen/px_1"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@color/whiteBgColor" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/yh_press_transparent_dark_orange"
+        android:text="@string/crop_complete"
+        android:textColor="@color/whiteTextColor" />
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_contain_detailitem"
+    android:layout_width="match_parent"
+    android:background="@color/btnTextColor"
+    android:layout_height="@dimen/px_60"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <CheckBox
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ch_item_addressmanage"
+        android:layout_marginRight="@dimen/px_16"
+        android:clickable="false"
+        android:textSize="@dimen/px_text_28"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/subordinationTitleTextColor"
+        style="@style/CustomActivityCheckBoxTheme" />
+    <TextView
+        android:id="@+id/tv_important_detailitem"
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_16"
+        android:textColor="@color/title_color"
+        android:layout_toLeftOf="@id/ch_item_addressmanage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_text_28"
+        tools:text="¥1000"/>
+    <TextView
+        android:id="@+id/aa"
+        android:layout_toLeftOf="@id/tv_important_detailitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/px_text_28"
+        android:layout_marginRight="@dimen/px_4"
+        tools:text="余额"/>
+    <TextView
+        android:id="@+id/tv_less_detailitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/px_text_28"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_toLeftOf="@id/aa"
+        tools:text="¥1200"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/px_10"
+        android:id="@+id/tv_name_activityitem"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/px_text_28"
+        android:layout_centerVertical="true"
+        tools:text="足疗店1000元充值卡"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_10"
+    android:weightSum="1">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_current_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/subordinationTitleTextColor"
+            android:textSize="@dimen/px_text_24"
+            tools:text="当前折扣:8.5折" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <net.twoant.master.ui.main.widget.MarqueeTextView
+            android:id="@+id/tv_marquee_vip_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_20"
+            app:startMarquee="true"
+            tools:text="您是“玄泽科技”的商家会员，当前会员级别为：vip6， 享有8.5折优惠。" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_prize_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginStart="@dimen/px_10"
+        android:gravity="center_vertical|start"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:maxLines="1"
+        android:minWidth="@dimen/px_200"
+        android:textColor="@color/principalTitleTextColor"
+        android:textColorHint="@color/subordinationContentTextColor"
+        android:textSize="@dimen/px_text_28"
+        tools:text="折后金额:10000" />
+
+</android.support.v7.widget.LinearLayoutCompat>

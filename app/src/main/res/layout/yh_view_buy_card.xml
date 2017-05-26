@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:id="@+id/cl_car_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/yh_buy_cart_bg"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="@dimen/px_80"
+            android:id="@+id/rv_card_list_recycler_view"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/px_90"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="top">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginStart="@dimen/px_20"
+                android:layout_weight="1"
+                android:text="@string/goods_car"
+                android:textColor="@color/principalTitleTextColor"
+                android:textSize="@dimen/px_text_28" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_clean_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_20"
+                android:clickable="true"
+                android:text="@string/goods_car_clean"
+                android:background="@drawable/yh_btn_press_transparent_grey"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_clearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yh_btn_press_orange"
+            android:text="@string/merchant_goods_clearing"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_28" />
+
+
+        <View
+            android:id="@+id/buy_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:layout_alignBottom="@id/btn_clearing"
+            android:layout_alignTop="@id/btn_clearing"
+            android:layout_toLeftOf="@id/btn_clearing"
+            android:layout_toStartOf="@id/btn_clearing"
+            android:background="@drawable/yh_bg_color_primary_border_rectangle"
+            android:clickable="true" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginStart="@dimen/px_20"
+            android:src="@drawable/ic_shop_cart" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_count_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/iv_cart"
+            android:layout_alignRight="@id/iv_cart"
+            android:layout_alignTop="@id/iv_cart"
+            android:background="@drawable/em_unread_count_bg"
+            android:gravity="center"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/px_text_20"
+            android:visibility="gone"
+            tools:text="99" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/px_20"
+            android:layout_toEndOf="@id/iv_cart"
+            android:layout_toRightOf="@id/iv_cart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_24"
+            tools:text="共1件商品" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_goods_count"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_goods_count"
+            android:layout_toRightOf="@id/tv_goods_count"
+            android:text="@string/merchant_goods_sum_price"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_24" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

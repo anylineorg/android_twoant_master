@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_simple_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:divider="@drawable/yh_divider_line_vertical"
+                app:showDividers="middle">
+
+                <include layout="@layout/yh_include_third_party" />
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/ll_wallet_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_90"
+                    android:background="@drawable/yh_white_grey_bg_btn_press"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:weightSum="1">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/px_10"
+                        android:paddingTop="@dimen/px_10"
+                        android:src="@drawable/ic_action_wallet" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/payment_we_wallet_pay"
+                        android:textColor="@color/principalTitleTextColor"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_wallet_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/px_text_22" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rb_waller_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:clickable="false" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/px_20"
+                        android:text="@string/recharge_hint"
+                        android:textColor="@color/principalTitleTextColor"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_input_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/recharge_input_hint"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLength="11"
+                        android:textColor="@color/principalTitleTextColor"
+                        android:textColorHighlight="@color/subordinationContentTextColor"
+                        android:textSize="@dimen/px_text_26" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <net.twoant.master.ui.main.widget.MarqueeTextView
+                    android:id="@+id/tv_hint_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingBottom="@dimen/px_20"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/px_text_24"
+                    app:startMarquee="true" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_apply_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yh_btn_press_orange"
+                    android:gravity="center"
+                    android:text="@string/recharge_btn_apply"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/px_text_30" />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v4.widget.ContentLoadingProgressBar
+                android:id="@+id/pb_progress"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

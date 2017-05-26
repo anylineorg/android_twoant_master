@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_clean_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/Empty_the_chat_record"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:typeface="normal" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_moderator_change_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/Change_the_group_name"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:typeface="normal" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_moderator_black_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/blacklist"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:typeface="normal" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_search_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yh_btn_press_transparent_grey"
+        android:clickable="true"
+        android:padding="@dimen/px_20"
+        android:text="@string/serach_group_message"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:typeface="normal" />
+</android.support.v7.widget.LinearLayoutCompat>

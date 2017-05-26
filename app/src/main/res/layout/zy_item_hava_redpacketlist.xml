@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:background="@color/btnTextColor"
+    android:layout_height="@dimen/px_130">
+
+   <ImageView
+       android:id="@+id/iv_img_redpacketlist"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="@dimen/px_6"
+       android:layout_width="@dimen/px_108"
+       android:scaleType="centerCrop"
+       android:layout_height="@dimen/px_108"
+       android:background="@drawable/shezhitouxiang"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/iv_img_redpacketlist"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/px_14"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:text="Mary蛋糕店"
+                android:id="@+id/shop_name"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/px_text_34"/>
+            <TextView
+                android:layout_marginTop="@dimen/px_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_start_start"
+                android:textSize="@dimen/px_text_24"
+                android:textColor="@color/text_grey"
+                tool:text="开始时间:2016.6.25-2016.12.30"/>
+            <TextView
+                android:layout_marginTop="@dimen/px_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_start_end"
+                android:textSize="@dimen/px_text_24"
+                android:textColor="@color/text_grey"
+                tool:text="到期时间:2016.6.25-2016.12.30"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/px_150"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_hong">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btnTextColor"
+                android:id="@+id/red_price"
+                android:textSize="@dimen/px_text_36"
+                android:text="¥5"/>
+            <TextView
+                android:id="@+id/red_use_price"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btnTextColor"
+                android:text="满99元可用"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:divider="@drawable/yh_divider_line"
+    app:showDividers="middle">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        style="@style/MerchantEnteredSelectImage">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MerchantEnteredLeftText"
+            android:text="@string/merchant_legal_photo" />
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/px_10"
+            android:paddingTop="@dimen/px_10">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_select_merchant_legal_phoo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_53"
+                android:layout_marginStart="@dimen/px_53"
+                android:clickable="true"
+                android:minWidth="@dimen/px_100"
+                android:padding="@dimen/px_15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pick_camera" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_delete_merchant_legal_poto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:clickable="true"
+                android:paddingBottom="@dimen/px_20"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/px_20"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+        <include layout="@layout/yh_merchant_entered_photo_request" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat style="@style/MerchantEnteredSelectImage">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MerchantEnteredLeftText"
+            android:text="@string/merchant_legal_photo" />
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/px_10"
+            android:paddingTop="@dimen/px_10">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_select_merchant_legal_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_53"
+                android:layout_marginStart="@dimen/px_53"
+                android:clickable="true"
+                android:minWidth="@dimen/px_100"
+                android:padding="@dimen/px_15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pick_camera" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_delete_merchant_legal_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:clickable="true"
+                android:paddingBottom="@dimen/px_20"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/px_20"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.ContentFrameLayout>
+
+        <include layout="@layout/yh_merchant_entered_photo_request" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.LinearLayoutCompat style="@style/MerchantEnteredSelectImage">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MerchantEnteredLeftText"
+                android:text="@string/merchant_legal_photo_positive" />
+
+            <android.support.v7.widget.ContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingTop="@dimen/px_10">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_select_merchant_legal_photo_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginStart="@dimen/px_20"
+                    android:clickable="true"
+                    android:minWidth="@dimen/px_100"
+                    android:padding="@dimen/px_15"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pick_camera" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_delete_merchant_legal_photo_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/px_20"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="0dp"
+                    android:paddingStart="@dimen/px_20"
+                    android:src="@drawable/ic_delete"
+                    android:visibility="gone" />
+
+            </android.support.v7.widget.ContentFrameLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MerchantEnteredLeftText"
+                android:layout_marginEnd="@dimen/px_20"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginStart="@dimen/px_20"
+                android:text="@string/merchant_legal_photo_negative" />
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingTop="@dimen/px_10">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_select_merchant_legal_photo_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginStart="@dimen/px_20"
+                    android:clickable="true"
+                    android:minWidth="@dimen/px_100"
+                    android:padding="@dimen/px_15"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pick_camera" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_delete_merchant_legal_photo_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/px_20"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="0dp"
+                    android:paddingStart="@dimen/px_20"
+                    android:src="@drawable/ic_delete"
+                    android:visibility="gone" />
+
+            </android.support.v7.widget.ContentFrameLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </HorizontalScrollView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

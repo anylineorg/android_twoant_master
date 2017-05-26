@@ -1,0 +1,134 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AiSouAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <!-- 允许使用transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- 指定进入和退出transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+        <!-- 指定shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/slide_top</item>
+    </style>
+
+    <style name="AiSouAppTheme.SelectLocation">
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="android:textColorPrimary">@color/whiteTextColor</item>
+        <item name="android:textColorHint">@color/subordinationContentTextColor</item>
+    </style>
+
+    <style name="TakePhotoToolbarTheme" parent="AiSouAppTheme">
+        <item name="android:textColorPrimary">@color/whiteTextColor</item>
+        <item name="android:actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="actionMenuTextColor">@color/whiteTextColor</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorSecondaryInverse">@android:color/white</item>
+    </style>
+
+    <style name="GreyWindowBackgroundTheme" parent="AiSouAppTheme">
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+
+    <style name="AiSouAppTheme.WhiteWindowBackground">
+        <item name="android:windowBackground">@color/whiteBgColor</item>
+    </style>
+
+    <style name="TransparentWindowBg" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- 允许使用transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- 指定进入和退出transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+        <!-- 指定shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">@android:transition/slide_top</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/slide_bottom
+        </item>
+    </style>
+
+    <style name="ShareElementWindowBg" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/whiteBgColor</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="ThemeLightDialog" parent="AlertDialog.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ThemeLightDialog.X">
+        <item name="android:windowAnimationStyle">@style/DialogStyle_X</item>
+    </style>
+
+    <style name="ThemeLightDialog.Y">
+        <item name="android:windowAnimationStyle">@style/DialogStyle_Y</item>
+    </style>
+
+    <!-- 弹出框动画 由下至上 -->
+    <style name="DialogStyle_Y" parent="Animation.AppCompat.Dialog">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/yh_dialog_y_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/yh_dialog_y_exit</item>
+        <!--<item name="android:windowEnterTransition">@anim/yh_dialog_y_enter</item>-->
+    </style>
+
+    <!-- 弹出框动画 由右至左 -->
+    <style name="DialogStyle_X" parent="Animation.AppCompat.Dialog">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/yh_dialog_x_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/yh_dialog_x_exit</item>
+        <!--<item name="android:windowEnterTransition">@anim/yh_dialog_y_enter</item>-->
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+
+
+    <style name="BottomSheetStyle" parent="android:Widget">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:elevation">@dimen/px_10</item>
+        <item name="behavior_peekHeight">auto</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">false</item>
+    </style>
+
+</resources>

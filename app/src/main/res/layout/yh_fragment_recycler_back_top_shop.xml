@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_shop_name_merchant_home_page"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingTop="@dimen/px_20"
+        android:textColor="@color/subordinationTitleTextColor"
+        android:textSize="@dimen/px_text_30"
+        android:textStyle="bold"
+        android:text="商铺名称45654654654654454545545654654654654" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_shop_server_merchant_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/yh_image_btn_press_gray"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:src="@drawable/ic_home_service"
+        android:visibility="visible" />
+
+
+
+    <ImageView
+        android:id="@+id/is_open"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/px_20"
+        android:background="@drawable/open"
+        android:paddingRight="@dimen/px_20" />
+
+
+    <android.support.v7.widget.AppCompatImageButton
+
+        android:id="@+id/btn_share_merchant_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/yh_image_btn_press_gray"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:src="@drawable/ic_home_share"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/btn_collection_merchant_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/yh_image_btn_press_gray"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:src="@drawable/ic_collection_uncheck"
+        android:visibility="gone" />
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+<android.support.v7.widget.LinearLayoutCompat
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="@dimen/px_20"
+android:orientation="vertical"
+android:paddingRight="@dimen/px_20">
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/yunfei"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingTop="@dimen/px_10"
+    android:text="运费"
+    android:textColor="@color/subordinationTitleTextColor"
+    android:textSize="@dimen/px_text_26" />
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/qisong"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingTop="@dimen/px_10"
+    android:text="满多少元起送"
+    android:textColor="@color/subordinationTitleTextColor"
+    android:textSize="@dimen/px_text_26" />
+</android.support.v7.widget.LinearLayoutCompat>
+<android.support.v7.widget.LinearLayoutCompat
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="@dimen/px_20"
+android:paddingRight="@dimen/px_20">
+
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingTop="@dimen/px_10"
+    android:text="@string/merchant_phone"
+    android:textColor="@color/subordinationTitleTextColor"
+    android:textSize="@dimen/px_text_26" />
+
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/tv_shop_telephone_merchant_home_page"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:lines="1"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:textColor="@color/subordinationTitleTextColor"
+    android:textSize="@dimen/px_text_26"
+    android:text="18812345678" />
+
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/tv_click_merchant_home_page"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:lines="1"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:textColor="@color/subordinationTitleTextColor"
+    android:textSize="@dimen/px_text_26"
+    android:text="点击量:1000次" />
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+<android.support.v7.widget.AppCompatTextView
+android:id="@+id/tv_shop_address_merchant_home_page"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:maxLines="5"
+android:paddingBottom="@dimen/px_10"
+android:paddingLeft="@dimen/px_20"
+android:paddingRight="@dimen/px_20"
+android:paddingTop="@dimen/px_10"
+android:textColor="@color/subordinationTitleTextColor"
+android:textSize="@dimen/px_text_26"
+    android:text="地址:" />
+</android.support.v7.widget.LinearLayoutCompat>

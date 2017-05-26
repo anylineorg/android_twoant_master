@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--pickerview依赖-->
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="textColorOut" format="color" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="dividerColor" format="color" />
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MerchantEnteredWriteInfo">
+        <attr name="left_text" format="string|reference" />
+        <attr name="left_id" format="integer" />
+        <attr name="left_textSize" format="reference|dimension" />
+        <attr name="left_textColor" format="reference|color" />
+
+        <attr name="right_id" format="integer" />
+        <attr name="right_hint_text" format="string|reference" />
+        <attr name="right_textColor" format="reference|color" />
+        <attr name="right_hint_textColor" format="reference|color" />
+        <attr name="right_textSize" format="dimension|reference" />
+        <attr name="right_maxLength" format="integer" />
+        <attr name="right_imeOptions">
+            <flag name="actionNext" value="1" />
+        </attr>
+        <attr name="right_inputType" format="integer">
+            <flag name="text" value="1" />
+            <flag name="phone" value="2" />
+            <flag name="number" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomCheckBox">
+        <attr name="text" format="string|reference" />
+        <attr name="textSize" format="dimension|reference" />
+        <attr name="textColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleOnlyShowPasswordView">
+        <attr name="sumLength" format="integer" />
+        <attr name="pointSize" format="dimension|reference" />
+        <attr name="pointColor" format="color|reference" />
+        <attr name="dividerLineColor" format="color|reference" />
+        <attr name="dividerLineWidth" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeTextView">
+        <attr name="startMarquee" format="boolean" />
+    </declare-styleable>
+</resources>

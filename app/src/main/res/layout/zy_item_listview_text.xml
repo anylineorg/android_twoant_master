@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/tv_commmentname_dynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_text_28"
+        android:textColor="@color/colorPrimaryDeep"
+        android:text="意潇"/>
+    <TextView
+        tool:text="回复"
+        android:id="@+id/tv_commment_font_dynamic"
+        android:textSize="@dimen/px_text_28"
+        android:textColor="@color/principalTitleTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        tool:text="意潇:"
+        android:id="@+id/tv_commment_reply_dynamic"
+        android:textColor="@color/colorPrimaryDeep"
+        android:textSize="@dimen/px_text_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_commment_content_dynamic"
+        android:layout_marginLeft="@dimen/px_8"
+        android:text="床前明光,疑似司马光"
+        android:ellipsize="end"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

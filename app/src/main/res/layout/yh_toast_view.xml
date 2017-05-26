@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yh_toast_bg"
+    android:gravity="center">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_toast_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingTop="@dimen/px_20"
+        android:scaleType="center"
+        android:visibility="gone"
+        tools:src="@drawable/add" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_10"
+        android:textAlignment="center"
+        android:textAppearance="?attr/titleTextAppearance"
+        android:textColor="@color/principalTitleTextColor"
+        android:textSize="@dimen/px_text_28"
+        tools:text="我是toast" />
+
+</android.support.v7.widget.LinearLayoutCompat>

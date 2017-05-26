@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/px_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_time_activityhistory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/px_text_24"
+    android:textColor="@color/subordinationContentTextColor"
+    android:text="2016-12-12"/>
+    <TextView
+        android:id="@+id/tv_name_activityhistory"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_toRightOf="@id/tv_time_activityhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_text_24"
+        android:textColor="@color/subordinationContentTextColor"
+        android:text="1500元至尊卡"/>
+    <TextView
+        android:id="@+id/tv_money_activityhistory"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_text_24"
+        android:layout_marginRight="@dimen/px_10"
+        android:textColor="@color/subordinationContentTextColor"
+        android:text="¥100"/>
+</RelativeLayout>

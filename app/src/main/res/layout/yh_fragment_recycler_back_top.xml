@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBgColor">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/fab_back_top"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_80"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/px_48"
+        android:layout_marginEnd="@dimen/px_32"
+        android:layout_marginRight="@dimen/px_32"
+        android:background="@android:color/transparent"
+        android:src="@drawable/yh_scroll_top_bg" />
+
+</android.support.design.widget.CoordinatorLayout>

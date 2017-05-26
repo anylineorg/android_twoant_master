@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_save"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="完成"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_18"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/px_text_32" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值成功"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="@dimen/px_4"
+       android:background="@color/btnTextColor"
+       android:layout_height="@dimen/px_340">
+       <android.support.v7.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:background="@color/btnTextColor"
+           android:layout_height="@dimen/px_210">
+
+           <LinearLayout
+               android:layout_width="@dimen/px_180"
+               android:orientation="horizontal"
+               android:layout_height="@dimen/px_200">
+               <android.support.v7.widget.AppCompatImageView
+                   android:layout_marginTop="@dimen/px_60"
+                   android:id="@+id/iv_image_state"
+                   android:layout_marginLeft="@dimen/px_60"
+                   android:layout_width="@dimen/px_80"
+                   android:layout_height="@dimen/px_80"
+                   android:background="@drawable/duigou_big" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/px_50"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/px_text_36"
+                   android:textStyle="bold"
+                   android:text="您充值积分成功"/>
+               <TextView
+                   android:id="@+id/tv_num_integral_success"
+                   android:layout_marginTop="@dimen/px_10"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/px_text_28"
+                   tool:text="本次充值:2000积分"/>
+               <TextView
+                   android:id="@+id/tv_time_success_integral"
+                   android:layout_marginTop="@dimen/px_10"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/px_text_28"
+                   tool:text="充值时间:2016-12-12 16:28:28"/>
+           </LinearLayout>
+       </android.support.v7.widget.LinearLayoutCompat>
+
+
+       <android.support.v7.widget.AppCompatButton
+           android:id="@+id/btn_enter_recharge_success"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/px_18"
+           android:layout_marginRight="@dimen/px_18"
+           android:background="@drawable/zy_frame_btn"
+           android:text="确定"
+           android:textColor="@color/whiteBgColor"
+           android:textSize="@dimen/px_text_35" />
+   </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

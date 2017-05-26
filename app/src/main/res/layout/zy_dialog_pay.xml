@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px_50"
+    android:background="@color/whiteBgColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_exit_dialog_pay"
+            android:paddingRight="@dimen/px_20"
+            android:paddingLeft="@dimen/px_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_40"
+            android:textStyle="italic"
+            android:textColor="@android:color/transparent"
+            android:background="@drawable/ic_action_close"
+            android:text="X"/>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:padding="@dimen/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用第三方支付"
+            android:textSize="@dimen/px_text_36"
+            android:textColor="@color/principalTitleTextColor"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_10">
+
+        <RadioButton
+            android:id="@+id/rb_weixin_pay"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/zy_radiobutton"
+            android:paddingRight="@dimen/px_30"
+            android:text="微信支付"
+            android:drawableLeft="@drawable/weixin"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+
+        <View
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_zhifubao_pay"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/zy_radiobutton"
+            android:paddingRight="@dimen/px_30"
+            android:text="支付宝"
+            android:drawableLeft="@drawable/zhifubao"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+
+        <View
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:padding="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_30"
+            android:text="需付款"/>
+        <TextView
+            android:id="@+id/tv_paymoney_dialogpay"
+            android:textSize="@dimen/px_text_30"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/errorHintColor"
+            android:layout_marginRight="@dimen/px_30"
+            android:text="0.01元"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_paymoney_dialogpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_18"
+        android:layout_marginRight="@dimen/px_18"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@drawable/zy_frame_btn"
+        android:text="确认付款"
+        android:layout_marginBottom="@dimen/px_50"
+        android:textColor="@color/whiteBgColor"
+        android:textSize="@dimen/px_text_35" />
+</LinearLayout>

@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.twoant.master">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.CALL_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <!-- mob权限 -->
+    <!-- 高德权限 -->
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 保存资源到SD卡 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 友盟分享 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 极光 Required -->
+    <permission
+        android:name="net.twoant.master.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- 极光 Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="net.twoant.master.permission.JPUSH_MESSAGE" />
+
+    <!-- 环信 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- <permission
+        android:name="com.hyphenate.chatuidemo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+   <uses-permission android:name="com.hyphenate.chatuidemo.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.hyphenate.chatuidemo.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hyphenate.chatuidemo.permission.MIPUSH_RECEIVE" /><!-->
+
+    <!-- 用于获取top activity -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="net.twoant.master.app.AiSouTinkerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AiSouAppTheme">
+
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="15054227813#miaodou" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="RPq1xXAO20ES2rwc4RISXcinKNF9ljkk" />
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58294a60a3251157d4001fac" />
+
+        <!-- 高德地图 key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="aab1f33c982fe7506139138afc63b3cb" />
+
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 极光推送 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/JPushDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="net.twoant.master" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- 极光 SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="net.twoant.master" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- 极光统计 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- 极光 appkey -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="afcdd4027bf7145195c03c04" />
+
+        <!-- 用户自定义的广播接收器 -->
+        <receiver
+            android:name="net.twoant.master.widget.jpush.MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="net.twoant.master" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 极光推送 End -->
+
+
+        <!-- 分享 QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信 -->
+        <activity
+            android:name="net.twoant.master.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="net.twoant.master.api.QQWallteCallBack"
+            android:launchMode="singleTop"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="qwallet100619284"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.twoant.master.api.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|screenLayout|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <!-- 裁剪的类 -->
+        <activity
+            android:name="net.twoant.master.widget.crop.CropImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|screenLayout|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <!-- 文件提供 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="net.twoant.master.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- 检查更新服务 -->
+        <service
+            android:name="net.twoant.master.widget.CheckUpdateService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- 检查更新 -->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 提示更新 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.HintUpdateActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AlertDialogStyle.Update" />
+
+        <!-- 高德地图详情 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.GDMapsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 写入服务 -->
+        <service
+            android:name="net.twoant.master.ui.main.server.WriteDataIntentService"
+            android:exported="false" />
+        <!-- 交流中心处理服务 -->
+        <service
+            android:name="net.twoant.master.ui.chat.server.ChatHandlerService"
+            android:exported="false" />
+
+        <!-- 启动页 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartPageTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 首屏广告页 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.StartActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 第一次使用的 导航页 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.NavigationActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 登录页面 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 首页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentWindowBg"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 商家入驻、商家认证 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.MerchantEnteredActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|screenLayout|touchscreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/FitsSystemWindows" />
+
+        <!-- 商家入驻协议页面 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.PushInfoDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_merchant_entered_agreement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme" />
+
+        <!-- 搜索页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentWindowBg"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 活动报表页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.ReportStatementActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_report_statement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground" />
+
+        <!-- 活动列表 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.ActionListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_action_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentWindowBg" />
+
+        <!-- 商家列表 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.MerchantListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_merchant_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentWindowBg" />
+
+        <!-- 发现列表 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.DiscoverActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/TransparentWindowBg" />
+
+        <!-- 商家首页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.MerchantHomePageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_merchant_home_page"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentWindowBg" />
+
+        <!-- 活动详情 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.ActionDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShareElementWindowBg"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <!-- 商品详情页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.BuyerGoodsDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_goods_detail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground" />
+        <!-- 支付页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.PayOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_pay_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--第三方支付-->
+        <activity android:name="net.twoant.master.ui.main.activity.PayPostOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/OrderPaymentStyle"
+            android:windowSoftInputMode="stateAlwaysHidden"  />
+
+        <!-- 活动参加用户列表 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.ActionJoinMemberActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentWindowBg"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 信息界面 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.MessageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground" />
+
+        <!-- 信息详情界面 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.MessageDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground" />
+
+        <!-- 选择地址界面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.SelectLocationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_select_location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.SelectLocation"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <!-- 搜索地址 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.SearchLocationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_search_location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.SelectLocation"
+            android:windowSoftInputMode="adjustPan|stateAlwaysVisible" />
+
+        <!-- 注册 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 商家管理 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.SellerManagerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商家合同信息 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.Activity_lhyy_tp"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 联合运营 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.Activity_lhyy"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 联合运营 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.Activity_lhyy_pay"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name="net.twoant.master.ui.other.activity.ForgetPwdActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商品管理 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.GoodsManagerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 管理员 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.AddAdministerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 添加管理员 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.AddAdministerActivityAdd"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 超级管理员 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.SpuerManagerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 发布商品 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.PublishGoodsActivity_"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.PublishGoodsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 编辑商品 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.EditGoodsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 发布活动 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.PublishDetailActivity_"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.PublishDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 活动管理 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.ActivityManagerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 编辑资料 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.fragment.EditDataActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Anim_fade" />
+        <!-- 编辑资料,修改昵称 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.fragment.EditDataNameActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Anim_fade" />
+        <!-- 编辑资料,修改个签 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.fragment.EditDataSignActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Anim_fade" />
+        <!-- 实名认证 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.RealNameActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.RealNameHasActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 我管理的商家 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.MyManageSellerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 收藏界面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.fragment.CollectActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 我的订单 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.MyOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商品订单详情 个人和商家 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.GoodsOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.ShopGoodsOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 已付款商品详情 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.GoodsHadPayOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.SetteingActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 查看图片工具 -->
+        <activity
+            android:name="net.twoant.master.common_utils.dz_photoview.ImagePagerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.other.activity.ImageScaleActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 个人待收货页面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.Order4Activity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商家待收货 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.ShopOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商家二维码 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.ShopQRCodeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 积分充值成功页 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.IntegralSuccessActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情界面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.GoodsDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情界面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.GoodsDetailSellerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 待付款详情界面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.WaitPayDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 个人提现 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.WithdrawalsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 提现成功页 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.WithdrawMonySuccessActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 店内支付成功页面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.ShopPaySuccessActivtity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 银行卡页面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.BankCardActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- zxing -->
+        <activity
+            android:name="net.twoant.master.ui.charge.zxing.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+        <activity
+            android:name="net.twoant.master.ui.charge.zxing.android.share.ShareActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.charge.zxing.android.history.HistoryActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.charge.zxing.android.PreferencesActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.charge.zxing.android.HelpActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 个人中心_分类 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.ClassifyActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!--个人中心设置-->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.AddClassifyDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 积分列表 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.IntegralActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 活动提交订单 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.PostOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 商品提交订单 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.GoodsPayOrderListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_goods_pay_order_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 提交订单确认支付页面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.PayDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 地址管理页面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.AddressManageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 添加地址页面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.AddAddressActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 聊天界面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.out.ChatWithSellerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 积分充值页面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.RechargeIntegralActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 报名费用 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.AddRegistrationFee"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 查看添加活动费用 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.ShowActionDetalActivity"
+            android:theme="@style/Anim_fade" />
+        <!-- 钱包界面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.WalletActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="net.twoant.master.ui.my_center.activity.out.AddBankCardActivity" />
+        <!-- 我的活动页面 -->
+        <activity android:name="net.twoant.master.ui.charge.activity.MyActivityActivity" />
+        <!-- 我的红包页面 -->
+        <activity android:name="net.twoant.master.ui.charge.fragment.RedPacketActivity" />
+        <!-- 账户信息 -->
+        <activity android:name="net.twoant.master.ui.my_center.fragment.AccountInformationActivity" />
+        <!-- 设置支付密码 -->
+        <activity android:name="net.twoant.master.ui.my_center.fragment.SetPayPasswordActivity" />
+        <activity android:name="net.twoant.master.ui.charge.activity.ShopPayActivity" />
+        <activity android:name="net.twoant.master.ui.charge.activity.ShopPayActivity_" />
+        <!-- 修改登录密码界面 -->
+        <activity android:name="net.twoant.master.ui.other.activity.FixPwdActivity" />
+        <!-- 个人活动未使用详情 -->
+        <activity android:name="net.twoant.master.ui.charge.activity.ActivityUseDetailActivity" />
+        <!-- 个人活动已完成详情 -->
+        <activity android:name="net.twoant.master.ui.charge.activity.ActivityUseFinishedActivity" />
+        <!-- 修改手机号页 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.FixPhoneActivity"
+            android:label="@string/title_activity_fix_phone"
+            android:theme="@style/Anim_fade" />
+        <!-- 修改手机号获取验证码页 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.FixPhoneGetCodeActivity"
+            android:label="@string/title_activity_fix_phone_get_code"
+            android:theme="@style/Anim_fade" />
+
+        <!-- 商家财务界面 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.Fi_ShopActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 充值界面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.activity.GetCashActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 支付成功界面 -->
+        <activity
+            android:name="net.twoant.master.wxapi.RechargeSuccessActivtity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 我管理的商家列表 -->
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.ManagerShopList"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 交易记录页面 -->
+        <activity
+            android:name="net.twoant.master.ui.charge.fragment.TransationRecordActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- alipay sdk begin -->
+        <!-- 支付宝h5支付页面 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 微信支付 -->
+        <activity
+            android:name="net.twoant.master.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@style/TransparentWindowBg"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxc794fc8561b76d39" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="net.twoant.master.wxapi.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 活动支付页 -->
+        <activity
+            android:name="net.twoant.master.ui.main.activity.ActionPaymentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_action_payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--订单支付成功页-->
+        <activity android:name="net.twoant.master.ui.main.activity.PaymentSuccessfulPageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/OrderPaymentStyle"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--充值页-->
+        <activity android:name="net.twoant.master.ui.main.activity.RechargeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 处理极光推送的service -->
+        <service
+            android:name="net.twoant.master.widget.jpush.HandlePushSever"
+            android:exported="false" />
+
+        <receiver android:name="net.twoant.master.widget.jpush.MyNetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 环************************************信 start -->
+        <!-- 聊天页面 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 添加好友 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.AddContactActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="stateVisible" />
+        <!-- 群组详情 -->
+        <!-- 群组列表 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.GroupsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 店铺咨询 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.MerchantChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_merchant_chat"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme" />
+        <!-- 群成员 列表 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.GroupMemberListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 新建群组 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.NewGroupActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 退出群组提示框 -->
+        <!-- 群组选人 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.GroupPickContactsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.PickAtUserActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+        <!-- 地图 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.NewFriendsMsgActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.ForwardMessageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 自定义的contextmenu -->
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+        <!-- 下载文件 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+        <!-- 黑名单 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.BlacklistActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+
+        <!-- 公开的群聊列表 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.PublicGroupsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 语音通话 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.VoiceCallActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" />
+        <!-- 视频通话 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+        <!-- 群聊简单信息 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.GroupSimpleDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+        <!-- 群组黑名单用户列表 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.GroupBlacklistActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.ChatSettingsActivity"
+            android:configChanges="orientation|screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.GroupSearchMessageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- choose video -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.ImageGridActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.RecorderVideoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- upload error log -->
+
+
+        <!-- iOS offline push nick -->
+        <!-- robots list -->
+        <!-- user profile -->
+        <activity
+            android:name="net.twoant.master.ui.chat.activity.UserProfileActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.ChatTheme" />
+
+        <!-- 红包相关Activity start -->
+
+
+        <!-- 开机自启动服务 -->
+        <receiver android:name="net.twoant.master.ui.chat.receiver.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- gcm start -->
+        <receiver
+            android:name="com.hyphenate.chat.EMGCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.hyphenate.chatuidemo" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.hyphenate.chat.EMGCMListenerService"
+            android:exported="false" />
+
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 环**************************************************信 end -->
+
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.FixPhoneSuccessAcitivity"
+            android:label="@string/title_activity_fix_phone_success_acitivity"
+            android:theme="@style/AiSouAppTheme" />
+
+        <!-- 便**************************************************民 start -->
+        <activity
+            android:name="net.twoant.master.ui.convenient.activity.ConvenientInfoContentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="net.twoant.master.ui.my_center.fragment.MyConvenientInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 便**************************************************民 end -->
+        <activity android:name="net.twoant.master.ui.my_center.fragment.PublishDynamicActivity" />
+        <activity
+            android:name="net.twoant.master.ui.convenient.activity.PublishConvenientActivity"
+            android:theme="@style/AiSouAppTheme" />
+        <activity android:name="net.twoant.master.ui.my_center.activity.DynamicListActivity" />
+        <!-- 动态列表 -->
+        <activity android:name="net.twoant.master.ui.my_center.fragment.LDynamicActivity" />
+        <activity
+            android:name="net.twoant.master.ui.my_center.activity.DynamicInfoContentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 附近人 -->
+        <activity android:name="net.twoant.master.ui.chat.activity.NearbyUserActivity" />
+        <!-- 便民信息搜索 -->
+        <activity
+            android:name="net.twoant.master.ui.convenient.activity.SearchConventionActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/title_activity_search_convention"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <!--我的店铺会员-->
+        <activity android:name="net.twoant.master.ui.my_center.activity.BuyerMemberListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AiSouAppTheme.WhiteWindowBackground"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

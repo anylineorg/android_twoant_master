@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_20"
+        android:descendantFocusability="blocksDescendants"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/btnTextColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/px_107"
+                    android:layout_height="@dimen/px_107"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/gray_arrow" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="活动发布"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:textSize="@dimen/px_text_36" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_showphoto"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_250">
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_4"
+                    android:layout_marginRight="@dimen/px_4"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:id="@+id/iv_showphoto_publish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_250"
+                    android:scaleType="centerCrop"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_delete_showphoto"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/deletephoto"/>
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/px_10"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:background="#ffffff"
+                android:layout_height="@dimen/px_78">
+
+                <TextView
+                    android:text="活动名称:"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:id="@+id/textView4"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@color/principalTitleTextColor" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/px_text_32"
+                    android:inputType="textPersonName"
+                    tools:text="活动撒大声地"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:id="@+id/et_activityname_publishactivity" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_addshow_publish"
+                    android:layout_width="@dimen/px_100"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_width="@dimen/px_4"
+                        android:layout_centerVertical="true"
+                        android:background="@color/backgroundColor"
+                        android:layout_height="@dimen/px_60"
+                        android:id="@+id/view" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/activity_name"
+                        android:id="@+id/imageView"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/px_10"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:id="@+id/activity_start_time_layout"
+                android:clickable="true"
+                android:background="@color/btnTextColor"
+                android:layout_height="@dimen/px_72">
+
+                <TextView
+                    android:text=""
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:id="@+id/activity_start_time"
+                    android:layout_toRightOf="@+id/start_tip"
+                    android:textColor="@color/principalTitleTextColor" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/write_huodong_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:text="开始时间:"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:id="@+id/start_tip"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/px_2"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:id="@+id/activity_end_time_layout"
+                android:clickable="true"
+                android:background="@color/btnTextColor"
+                android:layout_height="@dimen/px_72">
+
+                <TextView
+                    android:text="结束时间:"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:id="@+id/edit_product_type1"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:text=""
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:id="@+id/activity_end_time"
+                    android:layout_toRightOf="@+id/edit_product_type1"
+                    android:textColor="@color/principalTitleTextColor" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/write_huodong_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/px_2"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:background="@color/btnTextColor"
+                android:layout_height="@dimen/px_86">
+
+                <TextView
+                    android:text="活动地点:"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_76"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@color/principalTitleTextColor" />
+
+                <EditText
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    tools:text="帝邦数码城"
+                    android:textSize="@dimen/px_text_32"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:id="@+id/et_address_publishactivity" />
+
+            </LinearLayout>
+
+               <jp.wasabeef.richeditor.RichEditor
+                     android:layout_marginTop="@dimen/px_2"
+                     android:id="@+id/editor"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/px_1"
+                android:padding="@dimen/px_15"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_blod_publishactivity"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_40"
+                    android:background="@drawable/aricheditoe_b"/>
+
+                <ImageView
+                    android:id="@+id/iv_underline_publishactivity"
+                    android:layout_marginLeft="@dimen/px_25"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_40"
+                    android:background="@drawable/aricheditoe_u"/>
+
+                <ImageView
+                    android:id="@+id/iv_size_publishactivity"
+                    android:layout_marginLeft="@dimen/px_25"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_40"
+                    android:background="@drawable/aricheditoe_aa"/>
+
+                <ImageView
+                    android:id="@+id/iv_fontcolor_publishactivity"
+                    android:layout_marginLeft="@dimen/px_25"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_40"
+                    android:background="@drawable/aricheditoe_a"/>
+
+                <ImageView
+                    android:id="@+id/iv_selectphoto_publishactivity"
+                    android:layout_marginLeft="@dimen/px_25"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_40"
+                    android:background="@drawable/aricheditoe_img"/>
+
+                <ImageView
+                    android:id="@+id/iv_video_publishactivity"
+                    android:layout_marginLeft="@dimen/px_25"
+                    android:layout_width="@dimen/px_40"
+                    android:layout_height="@dimen/px_40"
+                    android:visibility="gone"
+                    android:background="@drawable/aricheditoe_video"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/px_2"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:padding="4dp"
+                android:id="@+id/activity_activity_layout"
+                android:background="#ffffff"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:text="添加活动图片:"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@color/principalTitleTextColor" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/px_72"
+                            android:orientation="horizontal"
+                            android:id="@+id/ll_detail_container_publish"
+                            >
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_marginLeft="@dimen/px_8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/add"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/iv_add_detail_publish" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:id="@+id/activity_type_layout"
+                android:clickable="true"
+                android:background="@color/btnTextColor"
+                android:layout_marginTop="@dimen/px_2"
+                android:layout_height="@dimen/px_72">
+
+                <Spinner
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/sp_selectclass_publish"
+                    android:layout_alignParentRight="true"
+                    android:dropDownVerticalOffset="@dimen/px_64"
+                    android:dropDownHorizontalOffset="@dimen/px_10"
+                    android:layout_width="@dimen/px_250"
+                    android:layout_height="@dimen/px_60"
+                    android:background="@drawable/sp_list">
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/a"
+                    android:text="活动方式"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_72"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_adddetail_publishactivity"
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:layout_height="@dimen/px_76"
+                android:layout_width="match_parent">
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="设置报名费用"/>
+                <ImageView
+                    android:layout_marginRight="@dimen/px_40"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_back_right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_showdetail_publishactivity"
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:layout_height="@dimen/px_76"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/principalTitleTextColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="查看已填报名费用"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/px_40"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_back_right"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:padding="@dimen/px_6"
+                android:layout_marginTop="@dimen/px_2"
+                android:id="@+id/rl_single_publishactivity"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/px_text_28"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单人单次参加"/>
+                <ImageView
+                    android:id="@+id/iv_single_publishacitivty"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_unselected"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:padding="@dimen/px_6"
+                android:id="@+id/rl_many_publishactivity"
+                android:layout_marginTop="@dimen/px_2"
+                android:background="@color/btnTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_many_publishacitivty"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:background="@drawable/icon_selected"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px_text_28"
+                    android:text="单人可多次参加"
+                    android:layout_alignBottom="@+id/iv_many_publishacitivty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView7" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_post_publishactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:textColor="@color/btnTextColor"
+                android:layout_marginLeft="@dimen/px_17"
+                android:layout_marginTop="@dimen/px_35"
+                android:layout_marginRight="@dimen/px_17"
+                android:background="@drawable/zy_post_bg"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

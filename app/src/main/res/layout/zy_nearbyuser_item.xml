@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/rl_contain_nearby"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteBgColor"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/px_10"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_photo_center"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="@dimen/px_90"
+        tool:src="@drawable/shezhitouxiang" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginStart="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_name_nearbyuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/subordinationTitleTextColor"
+                android:textSize="@dimen/px_text_26"
+                tool:text="两只蚂蚁" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_distance_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textSize="@dimen/px_text_20"
+                tool:text="100km" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/tv_age_nearbyuser"
+            android:layout_width="@dimen/px_70"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aa"
+            android:padding="@dimen/px_4"
+            android:layout_marginTop="@dimen/px_10"
+            android:background="@drawable/zy_nearby_age_male"
+            android:gravity="center"
+            android:textColor="@color/background_white"
+            android:textSize="@dimen/px_text_24"
+            tool:text="♀21" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_sign_nearbyuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/px_10"
+            android:drawableLeft="@drawable/icon_sign"
+            android:drawablePadding="@dimen/px_10"
+            android:drawableStart="@drawable/icon_sign"
+            android:lines="1"
+            android:textColor="@color/light_white"
+            android:textSize="@dimen/px_text_26"
+            tool:text="蚂蚁号:" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/px_10"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_list_view_popup_window"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/yh_divider_line" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_popup_window_select_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_15"
+        android:background="@drawable/yh_white_grey_bg_btn_press"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/px_text_30" />
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px_50"
+    android:background="@color/whiteBgColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/appCompatTextView" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_group_rechargeintegral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_10">
+        <RadioButton
+            android:id="@+id/rb_weixin_rechargeintegral"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/zy_radiobutton"
+            android:paddingRight="@dimen/px_30"
+            android:text="微信支付"
+            android:drawableLeft="@drawable/weixin"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+
+        <View
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_zhifubao_rechargeintegral"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/zy_radiobutton"
+            android:paddingRight="@dimen/px_30"
+            android:text="支付宝"
+            android:drawableLeft="@drawable/zhifubao"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+        <View
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_yue_rechargeintegral"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/zy_radiobutton"
+            android:paddingRight="@dimen/px_30"
+            android:text="我的钱包"
+            android:drawableLeft="@drawable/icon_qianbao"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            />
+        <View
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/cardview_shadow_start_color"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:padding="@dimen/px_10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_30"
+            android:text="需付款"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_70">
+            <EditText
+                android:id="@+id/et_money_rechargeintegral"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_60"
+                android:inputType="numberDecimal|number"
+                android:background="@drawable/sex_box_bg"
+                tool:text="10"/>
+            <TextView
+                android:layout_marginLeft="@dimen/px_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_34"
+                android:textColor="@color/principalTitleTextColor"
+                android:text="(元)"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/px_16"
+                android:id="@+id/tp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_28"
+                android:textColor="@color/subordinationContentTextColor"
+                android:text="可得到"/>
+            <TextView
+                android:id="@+id/tv_integral_rechargeintegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_28"
+                android:textColor="@color/subordinationContentTextColor"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/tp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_text_28"
+                android:textColor="@color/subordinationContentTextColor"
+                android:text="积分"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_paymoney_dialogpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_18"
+        android:layout_marginRight="@dimen/px_18"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@drawable/yh_btn_press_orange"
+        android:text="下一步"
+        android:layout_marginBottom="@dimen/px_50"
+        android:textColor="@color/whiteBgColor"
+        android:textSize="@dimen/px_text_35" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/yh_navigation_action_bar" android:visibility="gone"/>
+
+    <net.twoant.master.ui.main.widget.MySwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:divider="@drawable/yh_divider_line"
+                android:showDividers="middle"
+                app:layout_behavior="net.twoant.master.ui.main.widget.AppBarBehavior"
+                app:expanded="true">
+
+                <!--app:layout_behavior="com.qdxuanze.aisousuo.ui.main.widget.AppBarBehavior"-->
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_98"
+                    app:tabBackground="@drawable/yh_white_grey_bg_btn_press"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabIndicatorHeight="@dimen/px_4"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/currentSelectColor"
+                    app:tabTextColor="@color/principalTitleTextColor" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/fab_back_top"
+                android:layout_width="@dimen/px_100"
+                android:layout_height="@dimen/px_100"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="@dimen/px_198"
+                android:layout_marginLeft="@dimen/px_32"
+                android:background="@drawable/icon_shopping_car"
+
+                />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </net.twoant.master.ui.main.widget.MySwipeRefreshLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

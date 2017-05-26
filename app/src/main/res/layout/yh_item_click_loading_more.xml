@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_loading_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/px_20"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_10"
+        android:text="@string/action_loading_more_apply"
+        android:textColor="@color/currentSelectColor"
+        android:textSize="@dimen/px_text_24" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_hint"
+        android:src="@drawable/yh_ic_action_more_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.v7.widget.LinearLayoutCompat>

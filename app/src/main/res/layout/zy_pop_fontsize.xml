@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/px_300"
+    android:padding="@dimen/px_10"
+    android:layout_marginLeft="@dimen/px_100"
+    android:background="@drawable/zy_richetext_bg"
+    android:layout_height="@dimen/px_150">
+
+    <TextView
+        android:id="@+id/tv_pop_fontbig"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/px_text_50"
+        android:text="大"/>
+
+    <TextView
+        android:id="@+id/tv_pop_fontmiddle"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/px_text_50"
+        android:layout_height="match_parent"
+        android:text="中"/>
+
+    <TextView
+        android:id="@+id/tv_pop_fontsmall"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/px_text_50"
+        android:layout_height="match_parent"
+        android:text="小"/>
+</LinearLayout>

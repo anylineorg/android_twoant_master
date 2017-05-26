@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:paddingEnd="@dimen/px_10"
+        app:paddingStart="0dp"
+        app:theme="@style/AiSouAppTheme.ChatToolbarTheme"
+        app:popupTheme="@style/ToolbarOverflowStyle"
+        app:titleTextColor="@color/whiteTextColor">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_header_image"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_margin="@dimen/px_6"
+            android:padding="@dimen/px_10"
+            android:src="@drawable/ic_def_circle" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/chat_title_tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@drawable/yh_circle_border_white"
+            android:minWidth="@dimen/px_300"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="@dimen/px_2"
+            app:tabMinWidth="@dimen/px_100"
+            app:tabMode="fixed"
+            app:tabPadding="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/whiteTextColor" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/chat_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.v7.widget.LinearLayoutCompat>

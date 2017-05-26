@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/btnTextColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_107"
+            android:layout_height="@dimen/px_107"
+
+            android:src="@drawable/gray_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钱包"
+            android:textColor="@color/principalTitleTextColor"
+            android:textSize="@dimen/px_text_36"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/btnTextColor"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_160"
+            android:layout_marginTop="@dimen/px_25"
+            android:background="@drawable/yue"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/px_160"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_text_34"
+            android:textColor="#666666"
+            android:text="我的钱包" />
+
+        <TextView
+            android:id="@+id/funds"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:layout_marginTop="@dimen/px_0"
+            android:layout_marginBottom="@dimen/px_30"
+            android:textColor="@color/title_color"
+            android:textSize="40sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:textColor="@color/whiteTextColor"
+            android:text="充值"
+            android:id="@+id/qb_czhi"
+            android:background="@drawable/yh_btn_press_orange"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:textSize="@dimen/px_text_32"
+            android:layout_height="@dimen/px_80" />
+        <Button
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/qb_tx"
+            android:text="提现"
+            android:textSize="@dimen/px_text_32"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="@dimen/px_94" />
+    </LinearLayout>
+</LinearLayout>

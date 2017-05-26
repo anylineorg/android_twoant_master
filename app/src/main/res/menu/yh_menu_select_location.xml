@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/app_bar_search"
+
+        app:showAsAction="ifRoom"
+        android:orderInCategory="90"
+        android:title="@string/main_page_search" />
+
+    <item
+        android:id="@+id/confirm"
+        android:orderInCategory="100"
+        android:title="@string/crop_complete"
+        app:showAsAction="always" />
+
+</menu>
